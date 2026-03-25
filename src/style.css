@@ -9,12 +9,11 @@
   --color-arancio-chiaro: #ffcdb8;
   --color-hover-menu-mobile: #e88c01;
 
-  /* Grays & Neutrals */
+  /* Custom colors */
   --color-grigio-scuro: #3d3d3c;
   --color-grigio-medio: #757885;
   --color-grigio-chiaro: #f2f2f2;
   --color-grigio-pale: #b5b7c3;
-  /* Renamed to avoid duplicate 'chiaro' */
   --color-grigio-bottoni: #646464;
 
   /* Backgrounds & Bases */
@@ -25,6 +24,9 @@
   --font-sans: "Poppins", sans-serif;
   --font-noto: "Noto Serif", serif;
   --font-abhaya: "Abhaya Libre", serif;
+
+  /* Custom Spacing */
+  --spacing-145: 580px;
 }
 
 @layer components {
@@ -32,7 +34,6 @@
     display: grid;
     grid-template-columns:
       [full-start] 1fr [content-start] min(1260px, 100% - 40px) [content-end] 1fr [full-end];
-    align-content: start;
   }
 
   .wrapper>*,
