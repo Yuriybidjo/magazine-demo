@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tailwind-starter</title>
+</head>
+
+<body class="min-h-screen bg-bianco text-bianco">
+
+  <header class="wrapper">
+    <nav class="pt-4 pb-2 flex justify-between items-center text-gray-700">
+      <img src="public/svg/logo.svg" alt="Logo">
+
+      <ul class="flex gap-x-2.5">
+        <li class="inline-flex items-center gap-x-1 cursor-pointer hover:text-arancio transition-colors">
+          <select
+            class="appearance-none bg-transparent font-medium text-[13px] leading-[1.4] outline-none cursor-pointer text-right">
+            <option>Magazine</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.75 0.75L5.75 5.75L10.75 0.75" stroke="#3D3935" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </li>
+
+        <li class="inline-flex items-center gap-x-1 cursor-pointer hover:text-arancio transition-colors">
+          <select
+            class="appearance-none bg-transparent font-medium text-[13px] leading-[1.4] outline-none cursor-pointer text-right">
+            <option>Corsi</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.75 0.75L5.75 5.75L10.75 0.75" stroke="#3D3935" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </li>
+
+        <li class="inline-flex items-center gap-x-1 cursor-pointer hover:text-arancio transition-colors">
+          <select
+            class="appearance-none bg-transparent font-medium text-[13px] leading-[1.4] outline-none cursor-pointer text-right">
+            <option>Fiere</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.75 0.75L5.75 5.75L10.75 0.75" stroke="#3D3935" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </li>
+
+        <li class="inline-flex items-center gap-x-1 cursor-pointer hover:text-arancio transition-colors">
+          <select
+            class="appearance-none bg-transparent font-medium text-[13px] leading-[1.4] outline-none cursor-pointer text-right">
+            <option>Negozi</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.75 0.75L5.75 5.75L10.75 0.75" stroke="#3D3935" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </li>
+      </ul>
+
+      <div class="flex gap-x-9">
+        <form action="/" class="pr-9 border-r border-grigio-chiaro inline-flex items-center gap-x-2.5">
+          <input type="text" name="search" id="search"
+            class="hidden h-10 pl-4 rounded-l-3xl bg-grigio-chiaro border-none focus:ring-2 focus:ring-arancio outline-none transition-all font-sans text-sm"
+            placeholder="Search...">
+
+          <button type="submit" id="searchBtn" class="cursor-pointer">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.33301 1C12.383 1 15.6668 4.28307 15.667 8.33301C15.667 12.3831 12.3831 15.667 8.33301 15.667C4.28307 15.6668 1 12.383 1 8.33301C1.00018 4.28318 4.28318 1.00018 8.33301 1Z"
+                stroke="#3D3D3C" stroke-width="2" />
+              <line x1="13.2071" y1="14.2929" x2="19.0404" y2="20.1262" stroke="#3D3D3C" stroke-width="2" />
+            </svg>
+          </button>
+        </form>
+
+        <div class="flex items-center gap-x-3 cursor-pointer group transition-all hover:bg-grigio-chiaro/50">
+          <div
+            class="relative grid place-items-center w-16 rounded-full border-4  border-gray-200 group-hover:border-arancio transition-all duration-300">
+            <img src="./src/assets/images/profile.jpg" class="w-14 h-14 rounded-full object-cover" alt="User Profile" />
+          </div>
+
+          <div class="inline-flex justify-start items-center gap-x-3">
+            <select
+              class="appearance-none bg-transparent font-medium text-[13px] leading-[1.4] outline-none cursor-pointer  group-hover:text-arancio transition-colors">
+              <option>Annachiara</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.75 0.75L5.75 5.75L10.75 0.75" stroke="#3D3935" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrapper">
+    <section class="min-h-[580px] section-fb relative isolate">
+      <div class="row-span-full item-fb relative">
+        <img src="./src/assets/images/flowers.jpg" class="w-full h-full object-cover" alt="Hero" />
+
+        <div class="absolute inset-0"
+          style="background: linear-gradient(270deg, #3d3d3c 0%, rgba(61, 61, 60, 0.2) 100%); mix-blend-mode: multiply;">
+        </div>
+      </div>
+
+      <div class="row-span-full self-end max-w-[730px] mb-14 z-10">
+        <h1 class="mb-10 text-6xl font-abhaya drop-shadow-sm">
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod
+        </h1>
+        <p class="font-medium text-[13px] leading-[1.4] drop-shadow-sm">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do
+          eiusmod</p>
+      </div>
+
+      <div class="row-span-full justify-self-end py-14 h-full bg-transparent flex flex-col justify-between z-1">
+        <div class=" bg-white w-96 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow hover:scale-[1.02] cursor-pointer">
+          <div class="w-32 h-32 p-0.5 bg-grigio-chiaro flex-shrink-0">
+            <img src="./src/assets/images/header-slider-item1.jpg" alt="">
+          </div>
+
+          <div class="flex flex-col justify-between py-4">
+            <span class="text-[10px] uppercase font-bold text-arancio mb-1">Lorem Ipsum</span>
+            <h3 class="max-w-[180px] font-noto font-medium text-lg leading-tight text-grigio-scuro">Lorem ipsum dolor sit amet</h3>
+          </div>
+        </div>
+
+        <div class=" bg-white w-96 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow hover:scale-[1.02] cursor-pointer">
+          <div class="w-32 h-32 p-0.5 bg-grigio-chiaro flex-shrink-0">
+            <img src="./src/assets/images/header-slider-item2.jpg" alt="">
+          </div>
+
+          <div class="flex flex-col justify-between py-4">
+            <span class="text-[10px] uppercase font-bold text-arancio mb-1">Lorem Ipsum</span>
+            <h3 class="max-w-[180px] font-noto font-medium text-lg leading-tight text-grigio-scuro">Lorem ipsum dolor sit amet</h3>
+          </div>
+        </div>
+
+        <div class=" bg-white w-96 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow hover:scale-[1.02] cursor-pointer">
+          <div class="w-32 h-32 p-0.5 bg-grigio-chiaro flex-shrink-0">
+            <img src="./src/assets/images/header-slider-item3.jpg" alt="">
+          </div>
+
+          <div class="flex flex-col justify-between py-4">
+            <span class="text-[10px] uppercase font-bold text-arancio mb-1">Lorem Ipsum</span>
+            <h3 class="max-w-[180px] font-noto font-medium text-lg leading-tight text-grigio-scuro">Lorem ipsum dolor sit amet</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-fb bg-fondini py-20">
+      <div class="wrapper">
+    
+        <div class="flex justify-between items-end mb-12">
+          <h2 class="font-noto text-5xl text-grigio-scuro">News</h2>
+          <a href="#" class="font-sans text-sm underline decoration-arancio underline-offset-4">Vedi tutte</a>
+        </div>
+    
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    
+          <article class="lg:col-span-2 bg-white flex flex-col">
+            <div class="h-[400px] overflow-hidden">
+              <img src="./src/assets/images/flowers-lemon.jpg" class="w-full h-full object-cover" alt="News">
+            </div>
+            <div class="p-10 text-center flex flex-col items-center">
+              <span class="text-arancio uppercase font-bold text-xs mb-4">Lorem Ipsum</span>
+              <h3 class="font-noto text-3xl mb-6 max-w-xl">Lorem ipsum dolor sit amet, consectetur adipisci elit</h3>
+              <p class="text-grigio-medio text-sm mb-8 italic">Di Angela Rossi</p>
+              <button
+                class="border border-grigio-scuro px-12 py-3 font-sans text-sm hover:bg-grigio-scuro hover:text-white transition-all uppercase tracking-widest">
+                Scopri di più
+              </button>
+            </div>
+          </article>
+    
+          <div class="flex flex-col gap-8">
+            <article class="bg-white flex flex-col h-full">
+              <div class="h-48 overflow-hidden">
+                <img src="your-image-1.jpg" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6">
+                <span class="text-arancio text-xs font-bold">Lorem Ipsum</span>
+                <h4 class="font-noto text-lg mt-2 mb-4">Lorem ipsum dolor sit amet</h4>
+                <button class="border border-grigio-scuro px-6 py-2 text-xs uppercase">Scopri di più</button>
+              </div>
+            </article>
+    
+            <article class="bg-white flex flex-col h-full">
+            </article>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hidden wrapper">
+    <div class="section-fb bg-fondini">
+      <div>footer top</div>
+    </div>
+
+    <div class="">footer middle</div>
+
+    <div class="section-fb bg-grigio-chiaro">
+      <div>footer bottom</div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

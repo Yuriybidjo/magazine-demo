@@ -1,0 +1,52 @@
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-arancio: #f39200;
+  --color-arancio-chiaro: #ffcdb8;
+  --color-hover-menu-mobile: #e88c01;
+
+  /* Grays & Neutrals */
+  --color-grigio-scuro: #3d3d3c;
+  --color-grigio-medio: #757885;
+  --color-grigio-chiaro: #f2f2f2;
+  --color-grigio-pale: #b5b7c3;
+  /* Renamed to avoid duplicate 'chiaro' */
+  --color-grigio-bottoni: #646464;
+
+  /* Backgrounds & Bases */
+  --color-fondini: #f4ece8;
+  --color-bianco: #fff;
+
+  /* Custom fonts */
+  --font-sans: "Poppins", sans-serif;
+  --font-noto: "Noto Serif", serif;
+  --font-abhaya: "Abhaya Libre", serif;
+}
+
+@layer components {
+  .wrapper {
+    display: grid;
+    grid-template-columns:
+      [full-start] 1fr [content-start] min(1260px, 100% - 40px) [content-end] 1fr [full-end];
+  }
+
+  .wrapper>*,
+  .section-fb>* {
+    grid-column: content;
+  }
+
+  .section-fb {
+    grid-column: full;
+    display: grid;
+    grid-template-columns: inherit;
+  }
+
+  .section-fb>.item-fb {
+    grid-column: full;
+  }
+
+}
