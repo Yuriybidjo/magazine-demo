@@ -32,6 +32,7 @@
     display: grid;
     grid-template-columns:
       [full-start] 1fr [content-start] min(1260px, 100% - 40px) [content-end] 1fr [full-end];
+    align-content: start;
   }
 
   .wrapper>*,
