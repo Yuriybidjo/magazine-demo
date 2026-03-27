@@ -27,6 +27,9 @@
 
   /* Custom Spacing */
   --spacing-145: 580px;
+
+  /* Custom background image */
+  --background-image-hero: url('./src/assets/images/flowers.jpg');
 }
 
 @layer components {
