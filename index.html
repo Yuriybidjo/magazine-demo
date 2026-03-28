@@ -17,7 +17,7 @@
       <ul class="flex gap-x-2.5">
         <li class="relative inline-flex items-center group hover:text-arancio transition-colors">
           <select
-            class="pr-4 appearance-none bg-transparent font-medium text-[13px] leading-[1.4] outline-none cursor-pointer text-right">
+            class="pr-4 appearance-none bg-transparent font-medium text-[0.8125rem] leading-[1.4] outline-none cursor-pointer text-right">
             <option>Magazine</option>
             <option>Option 2</option>
             <option>Option 3</option>
@@ -31,7 +31,7 @@
 
         <li class="relative inline-flex items-center group hover:text-arancio transition-colors">
           <select
-            class="pr-4 appearance-none bg-transparent font-medium text-[13px] leading-[1.4] outline-none cursor-pointer text-right">
+            class="pr-4 appearance-none bg-transparent font-medium text-[0.8125rem] leading-[1.4] outline-none cursor-pointer text-right">
             <option>Corsi</option>
             <option>Option 2</option>
             <option>Option 3</option>
@@ -45,7 +45,7 @@
 
         <li class="relative inline-flex items-center group hover:text-arancio transition-colors">
           <select
-            class="pr-4 appearance-none bg-transparent font-medium text-[13px] leading-[1.4] outline-none cursor-pointer text-right">
+            class="pr-4 appearance-none bg-transparent font-medium text-[0.8125rem] leading-[1.4] outline-none cursor-pointer text-right">
             <option>Fiere</option>
             <option>Option 2</option>
             <option>Option 3</option>
@@ -60,7 +60,7 @@
 
         <li class="relative inline-flex items-center group hover:text-arancio transition-colors">
           <select
-            class="pr-4 appearance-none bg-transparent font-medium text-[13px] leading-[1.4] outline-none cursor-pointer text-right">
+            class="pr-4 appearance-none bg-transparent font-medium text-[0.8125rem] leading-[1.4] outline-none cursor-pointer text-right">
             <option>Negozi</option>
             <option>Option 2</option>
             <option>Option 3</option>
@@ -98,14 +98,15 @@
 
           <div class="relative inline-flex justify-start group hover:text-arancio transition-colors items-center">
             <select
-              class="pr-4 appearance-none bg-transparent font-medium text-[13px] leading-[1.4] outline-none cursor-pointer  group-hover:text-arancio transition-colors">
+              class="pr-4 appearance-none bg-transparent font-medium text-[0.8125rem] leading-[1.4] outline-none cursor-pointer  group-hover:text-arancio transition-colors">
               <option>Annachiara</option>
               <option>Option 2</option>
               <option>Option 3</option>
             </select>
 
-            <svg class="pointer-events-none absolute right-0 transition-transform duration-300 group-hover:border-arancio" width="12" height="7"
-              viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              class="pointer-events-none absolute right-0 transition-transform duration-300 group-hover:border-arancio"
+              width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.75 0.75L5.75 5.75L10.75 0.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
@@ -138,7 +139,7 @@
           </div>
 
           <div class="flex flex-col justify-between py-4">
-            <span class="text-[10px] uppercase font-bold text-arancio mb-1">Lorem Ipsum</span>
+            <span class="text-[10px] capitalize font-bold text-arancio mb-1">Lorem Ipsum</span>
             <h3 class="max-w-[180px] font-noto font-medium line-clamp-2 text-lg leading-tight text-grigio-scuro">Lorem
               ipsum dolor sit amet</h3>
           </div>
@@ -151,37 +152,250 @@
           </div>
 
           <div class="flex flex-col justify-between py-4">
-            <span class="text-[10px] uppercase font-bold text-arancio mb-1">Lorem Ipsum</span>
+            <span class="text-[10px] capitalize font-bold text-arancio mb-1">Lorem Ipsum</span>
             <h3 class="max-w-[180px] font-noto font-medium line-clamp-2 text-lg leading-tight text-grigio-scuro">Lorem
               ipsum dolor sit amet</h3>
           </div>
         </div>
 
         <div
-          class=" bg-white w-96 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow hover:scale-[1.02] cursor-pointer">
+          class="bg-white w-96 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow hover:scale-[1.02] cursor-pointer">
           <div class="w-32 h-32 p-0.5 bg-grigio-chiaro flex-shrink-0">
             <img src="./src/assets/images/header-slider-item3.jpg" alt="">
           </div>
 
           <div class="flex flex-col justify-between py-4">
-            <span class="text-[10px] uppercase font-bold text-arancio mb-1">Lorem Ipsum</span>
+            <span class="text-[10px] capitalize font-bold text-arancio mb-1">Lorem Ipsum</span>
+
             <h3 class="max-w-[180px] font-noto font-medium line-clamp-2 text-lg leading-tight text-grigio-scuro">Lorem
               ipsum dolor sit amet</h3>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="section-fb py-16 bg-fondini text-grigio-scuro">
+      <div class="flex justify-between items-baseline border-b border-grigio-scuro mb-10 pb-2">
+        <h2 class="font-abhaya text-6xl font-bolt">News</h2>
+        <a href="#" class="font-sans font-bold text-xs hover:text-arancio transition">Vedi tutte</a>
+      </div>
+
+      <div class="grid grid-cols-12 gap-6">
+
+        <div class="col-span-8 flex flex-col bg-white">
+          <div class="m-1.5 overflow-hidden rounded-sm">
+            <img src="./src/assets/images/flowers-sm.jpg" alt="Flowers" class="w-full object-cover" />
+          </div>
+
+          <div class="p-3.5 text-center bg-white">
+            <span class="text-arancio uppercase font-bold text-[10px] tracking-widest">Lorem Ipsum</span>
+
+            <h3 class="max-w-[600px] m-auto font-abhaya text-4xl mt-2.5 leading-tight italic">
+              Lorem ipsum dolor sit amet, consectetur adipisci elit
+            </h3>
+
+            <p class="mt-6 text-xs font-medium">Di <span class="text-arancio">Angela Rossi</span></p>
+
+            <button
+              class="w-full mt-6 py-3 border border-grigio-scuro px-2 text-xs font-bold hover:bg-grigio-scuro hover:text-white transition">
+              Scopri di più
+            </button>
+          </div>
+        </div>
+
+        <div class="col-span-4 flex flex-col gap-y-6">
+          <div class="grid grid-cols-2 gap-4 flex-1 bg-white">
+            <img src="./src/assets/images/butterfly.jpg" alt="Butterfly" class="m-1 object-cover" />
+
+            <div class="p-3.5 flex flex-col justify-between">
+              <div>
+                <span class="text-arancio font-bold text-[13px]">Lorem Ipsum</span>
+
+                <h4 class="font-abhaya font-medium text-lg leading-tight mt-1">Lorem ipsum dolor sit amet</h4>
+
+                <h5 class="max-w-[150px] mt-6 font-noto line-clamp-2 text-[13px] leading-tight">Lorem
+                  ipsum dolor sit amet</h5>
+              </div>
+
+              <div>
+                <p class="text-[9px]">di <span class="text-arancio text-[9px]">Lorem Ipsum</span></p>
+
+                <button class="mt-6 border border-grigio-scuro py-1 text-[10px] font-bold w-full">Scopri di
+                  più</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 flex-1 bg-white">
+            <img src="./src/assets/images/rabbits.jpg" alt="Rabbits" class="m-1 object-cover" />
+
+            <div class="p-3.5 flex flex-col justify-between">
+              <div>
+                <span class="text-arancio font-bold text-[13px]">Lorem Ipsum</span>
+                <h4 class="font-abhaya font-medium text-lg leading-tight mt-1">Lorem ipsum dolor sit amet</h4>
+                <h5 class="max-w-[150px] mt-6 font-noto line-clamp-2 text-[13px] leading-tight">Lorem
+                  ipsum dolor sit amet</h5>
+              </div>
+
+              <div>
+                <p class="text-[9px]">di <span class="text-arancio text-[9px]">Lorem Ipsum</span></p>
+
+                <button class="mt-6 border border-grigio-scuro py-1 text-[10px] font-bold w-full">Scopri di
+                  più</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="hidden wrapper">
-    <div class="section-fb bg-fondini">
-      <div>footer top</div>
+  <footer class="wrapper text-grigio-scuro">
+    <div class="section-fb bg-fondini pt-5 pb-8">
+      <div class="grid grid-cols-12 gap-5">
+        <div class="relative top-7 col-span-10">
+          <img src="./src/assets/images/svg/logo.svg" alt="Logo">
+          <div class="absolute"></div>
+        </div>
+
+        <div class="col-span-2 justify-self-end inline-flex gap-x-5 items-center">
+          <img class="w-fit h-8" src="./src/assets/images/svg/pinterest.svg" alt="">
+          <img class="w-fit h-6" src="./src/assets/images/svg/facebook.svg" alt="">
+          <img class="w-fit h-6" src="./src/assets/images/svg/instagram.svg" alt="">
+          <img class="w-fit h-6" src="./src/assets/images/svg/youtube.svg" alt="">
+        </div>
+      </div>
+
+      <div class="pt-10 pb-8 grid grid-cols-12 gap-5">
+        <div class="col-span-2">
+          <h4 class="font-sans font-bold capitalize text-[13px]">Magazine</h4>
+          <ul class="text-[12px] space-y-1">
+            <li><a href="#">News</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Blogger</a></li>
+          </ul>
+        </div>
+
+        <div class="col-span-2">
+          <h4 class="font-sans font-bold capitalize text-lg">Mondi</h4>
+          <ul class="text-[12px] space-y-1">
+            <li><a href="#">Cucito & Filato</a></li>
+            <li><a href="#">Carta Scrap & Colore</a></li>
+            <li><a href="#">Decoratione</a></li>
+            <li><a href="#">Bijoux & Accessori</a></li>
+            <li><a href="#">Ricamo & Tradizione</a></li>
+          </ul>
+        </div>
+
+        <div class="col-span-2">
+          <h4 class="font-sans font-bold capitalize text-[13px]">Corsi</h4>
+          <ul class="text-[12px] space-y-1">
+            <li><a href="#">Corsi nella tua città</a></li>
+          </ul>
+        </div>
+
+        <div class="col-span-2">
+          <h4 class="font-sans font-bold capitalize text-[13px]">Fiera</h4>
+          <ul class="text-[12px] space-y-1">
+            <li><a href="#">Vicenza</a></li>
+            <li><a href="#">Roma</a></li>
+            <li><a href="#">Milano</a></li>
+            <li><a href="#">Visita in sicurezza</a></li>
+          </ul>
+        </div>
+
+        <div class="col-span-2">
+          <h4 class="font-sans font-bold capitalize text-[13px]">Utili</h4>
+          <ul class="text-[12px] space-y-1">
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookies policy</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Area Download</a></li>
+          </ul>
+        </div>
+
+        <div class="col-span-2">
+          <h4 class="font-sans font-bold capitalize text-[13px]">Negozi</h4>
+          <ul class="text-[12px] space-y-1">
+            <li><a href="#">Negozi nella tua città</a></li>
+            <li><a href="#">Negozi online</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-10 pb-20 grid grid-cols-12 gap-5 border-t">
+        <div class="col-span-4">
+          <h2 class="max-w-sm mb-5 text-2xl font-medium text-grigio-scuro leading-snug leading-tight">
+            La nostra scintillante Newsletter!
+          </h2>
+          <p class="max-w-sm text-grigio-scuro text-[13px] leading-normal">
+            Novità di fiera in anteprima, creative da seguire, tutorial freschissimi, promozioni e codici sconto per le
+            tue spese
+            folli online. Wonder Woman sarà fiera di te!
+          </p>
+        </div>
+
+        <div class="col-span-8">
+          <form action="/" class="flex justify-between">
+            <div class="max-w-sm flex-1 flex flex-col gap-y-2.5">
+              <div>
+                <label for="name" id="name" class="max-w-sm text-[13px] font-medium">Name</label>
+                <input type="text" name="name" id="name"
+                  class="border border-grigio-scuro bg-transparent py-1 px-2 outline-none w-full" />
+              </div>
+              <div>
+                <label for="email" id="email" class="max-w-sm text-[13px] font-medium">E-mail</label>
+                <input type="email" name="email" id="email"
+                  class="border border-grigio-scuro bg-transparent py-1 px-2 outline-none w-full" />
+              </div>
+            </div>
+
+            <div class="max-w-xs pt-4 flex flex-col gap-y-2.5">
+              <p class="text-[9px]">
+                Letta l'informativa comunicatami, dichiaro la seguente volontà circa il trattamento dati per autonome
+                finalità di
+                marketing diretto da parte di terzi partner di IEG (finalità 4 dell'informativa)
+              </p>
+
+              <div class="flex gap-4 text-[10px] capitalize font-bold">
+                <label class="flex items-center gap-2"><input type="radio" name="privacy" /> Acconsento</label>
+                <label class="flex items-center gap-2"><input type="radio" name="privacy" /> Non Acconsento</label>
+              </div>
+
+              <button
+                class="w-max border border-grigio-scuro px-14 py-2 capitalize text-[13px] font-medium hover:bg-grigio-scuro hover:text-white transition">Iscriviti</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
 
-    <div class="">footer middle</div>
+    <div class="py-10 grid grid-cols-12 items-center gap-x-5">
+      <div class="col-span-8">
+        <p class="mb-1.5 text-[0.8125rem] leading-tight font-medium">Organizzato da:</p>
+        <img class="object-contain" src="./src/assets/images/footer-group1.png" alt="">
+      </div>
+
+      <div class="col-span-2">
+        <img class="object-contain" src="./src/assets/images/footer-group2.png" alt="">
+      </div>
+
+      <div class="">
+        <img class="object-contain" src="./src/assets/images/footer-group3.png" alt="">
+      </div>
+
+      <div class="">
+        <img class="object-contain" src="./src/assets/images/footer-group4.png" alt="">
+      </div>
+    </div>
 
     <div class="section-fb bg-grigio-chiaro">
-      <div>footer bottom</div>
+      <p class="py-5 text-[13px] tracking-tight">
+        &#169; ITALIAN EXHIBITION GROUP SpA&#169; All rights reserved - Via Emilia 155, 47921 Rimini - CF&#47;PI
+        00139440408 - Registro
+        Imprese: Rimini P.I e n. Reg. Imprese 00139440408 - Capitale Sociale &#8364; 52.214.897 i.v.
+      </p>
     </div>
   </footer>
 
