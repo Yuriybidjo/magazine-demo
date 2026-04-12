@@ -1,9 +1,17 @@
 /* Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600&display=swap");
 
 @import "tailwindcss";
 
 @theme {
+  /* Custom Breakpoints */
+  --breakpoint-xs: 23.75rem;
+  --breakpoint-sm: 36rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 62rem;
+  --breakpoint-xl: 75rem;
+  --breakpoint-xxl: 87.5rem;
+
   /* Brand Colors */
   --color-arancio: #f39200;
   --color-arancio-chiaro: #ffcdb8;
@@ -29,18 +37,20 @@
   --spacing-145: 580px;
 
   /* Custom background image */
-  --background-image-hero: url('./src/assets/images/flowers.jpg');
+  --background-image-hero: url("./src/assets/images/flowers.jpg");
 }
 
 @layer components {
   .wrapper {
     display: grid;
-    grid-template-columns:
-      [full-start] 1fr [content-start] min(1260px, 100% - 40px) [content-end] 1fr [full-end];
+    grid-template-columns: [full-start] 1fr [content-start] min(
+        1260px,
+        100% - 40px
+      ) [content-end] 1fr [full-end];
   }
 
-  .wrapper>*,
-  .section-fb>* {
+  .wrapper > *,
+  .section-fb > * {
     grid-column: content;
   }
 
@@ -50,8 +60,7 @@
     grid-template-columns: inherit;
   }
 
-  .section-fb>.item-fb {
+  .section-fb > .item-fb {
     grid-column: full;
   }
-
 }
