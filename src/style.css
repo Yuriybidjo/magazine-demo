@@ -4,6 +4,14 @@
 @import "tailwindcss";
 
 @theme {
+  /* Custom Breakpoints */
+  --breakpoint-xs: 23.75rem;
+  --breakpoint-sm: 36rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 62rem;
+  --breakpoint-xl: 75rem;
+  --breakpoint-xxl: 87.5rem;
+
   /* Brand Colors */
   --color-arancio: #f39200;
   --color-arancio-chiaro: #ffcdb8;
@@ -38,16 +46,27 @@
     --spacing-gutter: 40px;
     
     display: grid;
+<<<<<<< HEAD
     grid-template-columns:
       [full-start] 1fr
       [content-start] min(var(--size-content), 100% - var(--spacing-gutter))
       [content-end] 1fr
       [full-end];
+=======
+    grid-template-columns: [full-start] 1fr [content-start] min(
+        1260px,
+        100% - 40px
+      ) [content-end] 1fr [full-end];
+>>>>>>> 0fe8013c9fc5f82a4975a9649f5f0b0bc5a7d945
   }
 
   .wrapper > *,
   .section-fb > * {
+<<<<<<< HEAD
     grid-column: content-start / content-end;
+=======
+    grid-column: content;
+>>>>>>> 0fe8013c9fc5f82a4975a9649f5f0b0bc5a7d945
   }
 
   .section-fb {
@@ -57,6 +76,10 @@
   }
 
   .section-fb > .item-fb {
+<<<<<<< HEAD
     grid-column: full-start / full-end;
+=======
+    grid-column: full;
+>>>>>>> 0fe8013c9fc5f82a4975a9649f5f0b0bc5a7d945
   }
 }
