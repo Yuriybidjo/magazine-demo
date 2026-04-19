@@ -1,5 +1,5 @@
 /* Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600&display=swap");
 
 @import "tailwindcss";
 
@@ -29,29 +29,34 @@
   --spacing-145: 580px;
 
   /* Custom background image */
-  --background-image-hero: url('./src/assets/images/flowers.jpg');
+  --background-image-hero: url("./src/assets/images/flowers.jpg");
 }
 
 @layer components {
   .wrapper {
+    --size-content: 1260px;
+    --spacing-gutter: 40px;
+    
     display: grid;
     grid-template-columns:
-      [full-start] 1fr [content-start] min(1260px, 100% - 40px) [content-end] 1fr [full-end];
+      [full-start] 1fr
+      [content-start] min(var(--size-content), 100% - var(--spacing-gutter))
+      [content-end] 1fr
+      [full-end];
   }
 
-  .wrapper>*,
-  .section-fb>* {
-    grid-column: content;
+  .wrapper > *,
+  .section-fb > * {
+    grid-column: content-start / content-end;
   }
 
   .section-fb {
-    grid-column: full;
+    grid-column: full-start / full-end;
     display: grid;
     grid-template-columns: inherit;
   }
 
-  .section-fb>.item-fb {
-    grid-column: full;
+  .section-fb > .item-fb {
+    grid-column: full-start / full-end;
   }
-
 }
