@@ -11,219 +11,196 @@
     />
   </head>
 
-  <body class="min-h-screen bg-bianco text-bianco pt-[90px]">
-    <header class="wrapper">
+  <body class="min-h-screen bg-bianco text-bianco">
+    <header class="sticky top-0 z-50 bg-white w-full shadow-sm">
       <nav
-        class="fixed top-0 left-0 w-full pt-4 pb-2 flex justify-between items-center text-gray-700 z-50 bg-white"
+        class="max-w-screen-xl m-auto px-5 xl:px-0 pt-4 pb-2 flex flex-wrap items-center gap-4 xl:gap-x-10 text-gray-700 bg-white"
       >
-        <img src="./src/assets/images/svg/logo.svg" alt="Logo" />
-
-        <ul
-          id="mobile-nav"
-          class="fixed top-[90px] right-0 max-w-fit h-auto shadow-xl translate-x-full bg-white transition-transform duration-300 ease-in-out flex p-6 gap-x-2.5"
-        >
-          <li
-            class="relative inline-flex items-center group hover:text-arancio transition-colors"
-          >
-            <select
-              class="pr-4 appearance-none bg-transparent font-medium text-[0.8125rem] leading-[1.4] outline-none cursor-pointer text-right"
-            >
-              <option>Magazine</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select>
-
-            <svg
-              class="pointer-events-none absolute right-0 transition-transform duration-300"
-              width="12"
-              height="7"
-              viewBox="0 0 12 7"
-            >
-              <path
-                d="M1 1l5 5 5-5"
-                stroke="currentColor"
-                stroke-width="1.5"
-                fill="none"
-              />
-            </svg>
-          </li>
-
-          <li
-            class="relative inline-flex items-center group hover:text-arancio transition-colors"
-          >
-            <select
-              class="pr-4 appearance-none bg-transparent font-medium text-[0.8125rem] leading-[1.4] outline-none cursor-pointer text-right"
-            >
-              <option>Corsi</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select>
-
-            <svg
-              class="pointer-events-none absolute right-0 transition-transform duration-300"
-              width="12"
-              height="7"
-              viewBox="0 0 12 7"
-            >
-              <path
-                d="M1 1l5 5 5-5"
-                stroke="currentColor"
-                stroke-width="1.5"
-                fill="none"
-              />
-            </svg>
-          </li>
-
-          <li
-            class="relative inline-flex items-center group hover:text-arancio transition-colors"
-          >
-            <select
-              class="pr-4 appearance-none bg-transparent font-medium text-[0.8125rem] leading-[1.4] outline-none cursor-pointer text-right"
-            >
-              <option>Fiere</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select>
-
-            <svg
-              class="pointer-events-none absolute right-0 transition-transform duration-300"
-              width="12"
-              height="7"
-              viewBox="0 0 12 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.75 0.75L5.75 5.75L10.75 0.75"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </li>
-
-          <li
-            class="relative inline-flex items-center group hover:text-arancio transition-colors"
-          >
-            <select
-              class="pr-4 appearance-none bg-transparent font-medium text-[0.8125rem] leading-[1.4] outline-none cursor-pointer text-right"
-            >
-              <option>Negozi</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select>
-
-            <svg
-              class="pointer-events-none absolute right-0 transition-transform duration-300"
-              width="12"
-              height="7"
-              viewBox="0 0 12 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.75 0.75L5.75 5.75L10.75 0.75"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </li>
-        </ul>
-
-        <div class="flex gap-x-9">
-          <form
-            action="/"
-            class="pr-9 border-r border-grigio-chiaro inline-flex items-center gap-x-2.5"
-          >
-            <input
-              type="text"
-              name="search"
-              id="search"
-              class="hidden h-10 pl-4 rounded-l-3xl bg-grigio-chiaro border-none focus:ring-2 focus:ring-arancio outline-none transition-all font-sans text-sm"
-              placeholder="Search..."
-            />
-
-            <button type="submit" id="searchBtn" class="cursor-pointer">
-              <svg
-                width="21"
-                height="21"
-                viewBox="0 0 21 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.33301 1C12.383 1 15.6668 4.28307 15.667 8.33301C15.667 12.3831 12.3831 15.667 8.33301 15.667C4.28307 15.6668 1 12.383 1 8.33301C1.00018 4.28318 4.28318 1.00018 8.33301 1Z"
-                  stroke="#3D3D3C"
-                  stroke-width="2"
-                />
-                <line
-                  x1="13.2071"
-                  y1="14.2929"
-                  x2="19.0404"
-                  y2="20.1262"
-                  stroke="#3D3D3C"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-          </form>
-
-          <div
-            class="flex items-center gap-x-3 cursor-pointer group transition-all hover:bg-grigio-chiaro/50"
-          >
-            <div
-              class="relative grid place-items-center w-16 rounded-full border-4 border-gray-200 group-hover:border-arancio transition-all duration-300"
-            >
-              <img
-                src="./src/assets/images/profile.jpg"
-                class="w-14 h-14 rounded-full object-cover"
-                alt="User Profile"
-              />
-            </div>
-
-            <div
-              class="relative inline-flex justify-start group hover:text-arancio transition-colors items-center"
-            >
-              <select
-                class="pr-4 appearance-none bg-transparent font-medium text-[0.8125rem] leading-[1.4] outline-none cursor-pointer group-hover:text-arancio transition-colors"
-              >
-                <option>Annachiara</option>
-                <option>Option 2</option>
-                <option>Option 3</option>
-              </select>
-
-              <svg
-                class="pointer-events-none absolute right-0 transition-transform duration-300 group-hover:border-arancio"
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.75 0.75L5.75 5.75L10.75 0.75"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-          </div>
+        <!-- logo -->
+        <div class="order-1 md:order-0 grow xl:grow-0">
+          <img
+            class="w-37.5 md:w-auto"
+            src="./src/assets/images/svg/logo.svg"
+            alt="Logo"
+          />
         </div>
-
-        <button id="open-menu" class="lg:hidden cursor-pointer">
+        <!-- button menu trigger -->
+        <button id="open-menu" class="order-3 sm:hidden cursor-pointer">
           <i id="hamburger" class="ri-menu-line text-2xl"></i>
         </button>
+        <!-- navigation list container -->
+        <div
+          id="mobile-nav"
+          class="lg:grow sm:order-3 lg:order-0 p-6 sm:p-0 fixed sm:static w-3/4 sm:w-full lg:w-auto top-[75px] right-0 bottom-0 h-full sm:h-auto shadow-xl sm:shadow-none translate-x-full sm:translate-x-0 bg-white transition-transform duration-300 ease-in-out sm:flex sm:justify-center"
+        >
+          <!-- List container dropdown menu -->
+          <ul
+            class="font-medium text-[0.8125rem] leading-[1.4] h-full sm:py-2 sm:h-auto flex flex-col gap-y-14 sm:gap-y-0 sm:flex-row sm:items-center sm:gap-x-4 md:gap-x-7 xl:gap-x-10"
+          >
+            <!--dropdown link item 1 -->
+            <li class="bg-arancio/30 sm:bg-transparent rounded relative">
+              <button
+                type="button"
+                class="w-full sm:w-auto py-2.5 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center gap-0.5 rounded"
+              >
+                <span class="pointer-events-none select-none">Magazine</span>
+                <i class="ri-arrow-down-s-line pointer-events-none"></i>
+              </button>
+              <!-- dropdown list -->
+              <div
+                class="z-1 dropdown-menu absolute top-0 sm:top-full right-0 sm:left-1/2 sm:-translate-x-1/2 hidden bg-fondini rounded-b-lg pb-2 w-max sm:w-48"
+              >
+                <a href="#" class="block px-6 py-2 hover:bg-grigio-pale"
+                  >Magazine Link 1</a
+                >
+                <a href="#" class="block px-6 py-2 hover:bg-grigio-pale"
+                  >Magazine Link 2</a
+                >
+                <a href="#" class="block px-6 py-2 hover:bg-grigio-pale"
+                  >Magazine Link 3</a
+                >
+              </div>
+            </li>
+            <!--dropdown link item 2 -->
+            <li class="bg-arancio/30 sm:bg-transparent rounded relative">
+              <button
+                type="button"
+                class="w-full sm:w-auto py-2.5 sm:py-0 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center gap-0.5 rounded"
+              >
+                <span class="pointer-events-none select-none">Corsi</span>
+                <i class="ri-arrow-down-s-line pointer-events-none"></i>
+              </button>
+              <!-- dropdown list -->
+              <div
+                class="z-1 dropdown-menu absolute top-0 sm:top-full right-0 sm:left-1/2 sm:-translate-x-1/2 hidden bg-fondini rounded-b-lg pb-2 w-48"
+              >
+                <a href="#" class="block px-6 py-2 hover:bg-grigio-pale"
+                  >Corsi Link 1</a
+                >
+                <a href="#" class="block px-6 py-2 hover:bg-grigio-pale"
+                  >Corsi Link 2</a
+                >
+                <a href="#" class="block px-6 py-2 hover:bg-grigio-pale"
+                  >Corsi Link 3</a
+                >
+              </div>
+            </li>
+            <!--dropdown link item 3 -->
+            <li class="bg-arancio/30 sm:bg-transparent rounded relative">
+              <button
+                type="button"
+                class="w-full sm:w-auto py-2.5 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center gap-0.5 rounded"
+              >
+                <span class="pointer-events-none select-none">Fiere</span>
+                <i class="ri-arrow-down-s-line pointer-events-none"></i>
+              </button>
+              <!-- dropdown list -->
+              <div
+                class="z-1 dropdown-menu absolute top-0 sm:top-full right-0 sm:left-1/2 sm:-translate-x-1/2 hidden bg-fondini rounded-b-lg pb-2 w-48"
+              >
+                <a href="#" class="block px-6 py-2 hover:bg-grigio-pale"
+                  >Fiere Link 1</a
+                >
+                <a href="#" class="block px-6 py-2 hover:bg-grigio-pale"
+                  >Fiere Link 2</a
+                >
+                <a href="#" class="block px-6 py-2 hover:bg-grigio-pale"
+                  >Fiere Link 3</a
+                >
+              </div>
+            </li>
+            <!--dropdown link item 4 -->
+            <li class="bg-arancio/30 sm:bg-transparent rounded relative">
+              <button
+                type="button"
+                class="w-full sm:w-auto py-2.5 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center gap-0.5 rounded"
+              >
+                <span class="pointer-events-none select-none">Negozi</span>
+                <i class="ri-arrow-down-s-line pointer-events-none"></i>
+              </button>
+              <!-- dropdown list -->
+              <div
+                class="z-1 dropdown-menu absolute top-0 sm:top-full right-0 sm:left-1/2 sm:-translate-x-1/2 hidden bg-fondini rounded-b-lg pb-2 w-48"
+              >
+                <a href="#" class="block px-6 py-2 hover:bg-grigio-pale"
+                  >Negozi Link 1</a
+                >
+                <a href="#" class="block px-6 py-2 hover:bg-grigio-pale"
+                  >Negozi Link 2</a
+                >
+                <a href="#" class="block px-6 py-2 hover:bg-grigio-pale"
+                  >Negozi Link 3</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- form container -->
+        <div class="order-2 md:order-0">
+          <!-- Search form  -->
+          <form id="searchForm" class="relative flex items-center">
+            <input
+              type="text"
+              id="search"
+              class="w-0 lg:w-md invisible opacity-0 pointer-events-none z-10 absolute right-0 h-10 pl-4 pr-10 rounded-full outline-none bg-grigio-chiaro font-sans text-sm transition-all duration-300 ease-in-out"
+              placeholder="Search..."
+            />
+            <button
+              type="button"
+              id="searchBtn"
+              class="ri-search-line text-2xl relative z-20 cursor-pointer mr-1"
+            ></button>
+          </form>
+        </div>
+        <!-- profile container  -->
+        <div
+          class="xl:border-l-2 border-grigio-chiaro hidden md:flex items-center gap-x-3 xl:gap-10 xl:pl-8 cursor-pointer group transition-all hover:bg-grigio-chiaro/50"
+        >
+          <div
+            class="relative grid place-items-center w-16 rounded-full border-4 border-gray-200 group-hover:border-arancio transition-all duration-300"
+          >
+            <img
+              src="./src/assets/images/profile.jpg"
+              class="w-14 h-14 rounded-full object-cover"
+              alt="User Profile"
+            />
+          </div>
+          <!-- profile select -->
+          <div
+            class="relative inline-flex justify-start group hover:text-arancio transition-colors items-center"
+          >
+            <select
+              class="pr-4 appearance-none bg-transparent font-medium text-[0.8125rem] leading-[1.4] outline-none cursor-pointer group-hover:text-arancio transition-colors"
+            >
+              <option>Annachiara</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+
+            <svg
+              class="pointer-events-none absolute right-0 transition-transform duration-300 group-hover:border-arancio"
+              width="12"
+              height="7"
+              viewBox="0 0 12 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.75 0.75L5.75 5.75L10.75 0.75"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main class="wrapper">
       <section
-        class="section-fb h-145 bg-hero bg-cover bg-center relative isolate"
+        class="hidden section-fb h-145 bg-hero bg-cover bg-center relative isolate"
       >
         <div
           class="item-fb row-span-full"
@@ -311,7 +288,7 @@
         </div>
       </section>
 
-      <section class="section-fb py-16 bg-fondini text-grigio-scuro">
+      <section class="hidden section-fb py-16 bg-fondini text-grigio-scuro">
         <div
           class="flex justify-between items-baseline border-b border-grigio-scuro mb-10 pb-2"
         >
@@ -440,7 +417,7 @@
       </section>
     </main>
 
-    <footer class="wrapper text-grigio-scuro">
+    <footer class="hidden wrapper text-grigio-scuro">
       <div class="section-fb bg-fondini pt-5 pb-8">
         <div class="grid grid-cols-12 gap-5">
           <div class="relative top-7 col-span-10">

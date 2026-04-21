@@ -9,7 +9,7 @@
   --breakpoint-sm: 36rem;
   --breakpoint-md: 48rem;
   --breakpoint-lg: 62rem;
-  --breakpoint-xl: 75rem;
+  --breakpoint-xl: 78.75rem;
   --breakpoint-xxl: 87.5rem;
 
   /* Brand Colors */
@@ -42,9 +42,9 @@
 
 @layer components {
   .wrapper {
-    --size-content: 1260px;
-    --spacing-gutter: 40px;
-    
+    --size-content: 78.75rem;
+    --spacing-gutter: 2.5rem;
+
     display: grid;
     grid-template-columns:
       [full-start] 1fr
