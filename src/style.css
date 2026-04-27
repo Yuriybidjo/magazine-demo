@@ -40,31 +40,47 @@
   --background-image-hero: url("./src/assets/images/flowers.jpg");
 }
 
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    @apply min-h-screen text-grigio-scuro bg-bianco;
+  }
+
+  h1 {
+    font-family: var(--font-abhaya);
+    @apply font-bold leading-none text-bianco;
+  }
+
+  h2 {
+    font-family: var(--font-abhaya);
+    @apply font-bold leading-none;
+  }
+}
+
 @layer components {
   .h1 {
-    @apply text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-abhaya leading-tight;
+    @apply text-2xl xs:text-[28px] md:text-3xl lg:text-5xl xl:text-6xl;
   }
 
   .h2 {
-    @apply text-4xl md:text-5xl xl:text-6xl leading-tight;
+    @apply text-2xl xs:text-[28px] md:text-4xl lg:text-5xl xl:text-6xl;
   }
 
   .h3 {
-    @apply text-3xl md:text-4xl xl:text-5xl;
+    @apply text-xl xs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
   }
 
   .h4 {
-    @apply text-2xl md:text-3xl xl:text-4xl;
+    @apply text-2xl xs:text-3xl md:text-3xl lg:text-4xl xl:text-4xl;
   }
 
   .h5 {
-    @apply text-xl md:text-2xl font-medium;
+    @apply text-xl xs:text-2xl md:text-2xl font-medium;
   }
 
   .h6 {
-    @apply text-lg md:text-xl font-medium;
+    @apply text-lg xs:text-xl md:text-xl font-medium;
   }
-
 }
 
 @layer local {
@@ -78,6 +94,10 @@
       [content-start] min(var(--size-content), 100% - var(--spacing-gutter))
       [content-end] 1fr
       [full-end];
+
+    @media (width <= 23.75rem) {
+      --spacing-gutter: 1.25rem;
+    }
   }
 
   .wrapper > *,

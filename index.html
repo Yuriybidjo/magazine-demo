@@ -4,25 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tailwind-starter</title>
+    <title>Tailwind Starter - Magazine</title>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
   </head>
 
-  <body class="min-h-screen bg-bianco text-bianco">
+  <body>
     <header class="sticky top-0 z-50 bg-white w-full shadow-sm">
       <nav
-        class="max-w-screen-xl m-auto px-5 xl:px-0 pt-4 pb-2 flex flex-wrap items-center gap-4 xl:gap-x-10 text-gray-700 bg-white"
+        class="max-w-screen-xl m-auto px-2.5 xs:px-5 xl:px-0 pt-4 pb-2 flex flex-wrap items-center gap-4 xl:gap-x-10 text-gray-700 bg-white"
       >
         <!-- logo -->
         <div class="order-1 md:order-0 grow xl:grow-0">
-          <img
-            class="w-37.5 md:w-auto"
-            src="./src/assets/images/svg/logo.svg"
-            alt="Logo"
-          />
+          <a
+            href="/"
+            class="inline-block focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400"
+            aria-label="Go to Home"
+          >
+            <img
+              class="w-37.5 md:w-auto"
+              src="./src/assets/images/svg/logo.svg"
+              alt="Home Magazine Logo"
+            />
+          </a>
         </div>
         <!-- button menu trigger -->
         <button id="open-menu" class="order-3 sm:hidden cursor-pointer">
@@ -237,7 +243,9 @@
             Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do
             eiusmod
           </h1>
-          <p class="font-medium text-[13px] leading-[1.4] drop-shadow-sm">
+          <p
+            class="text-bianco font-medium text-[13px] leading-[1.4] drop-shadow-sm"
+          >
             Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do
             eiusmod
           </p>
@@ -330,12 +338,14 @@
           </div>
         </div>
       </section>
-      <!-- 
-      <section class="section-fb py-16 bg-fondini text-grigio-scuro">
+
+      <section
+        class="section-fb py-6 md:py-11 lg:py-16 bg-fondini text-grigio-scuro"
+      >
         <div
           class="flex justify-between items-baseline border-b border-grigio-scuro mb-10 pb-2"
         >
-          <h2 class="font-abhaya text-6xl font-bolt">News</h2>
+          <h2 class="h2">News</h2>
           <a
             href="#"
             class="font-sans font-bold text-xs hover:text-arancio transition"
@@ -343,24 +353,24 @@
           >
         </div>
 
-        <div class="grid grid-cols-12 gap-6">
-          <div class="col-span-8 flex flex-col bg-white">
-            <div class="m-1.5 overflow-hidden rounded-sm">
+        <div class="grid grid-cols-12 gap-y-2 sm:gap-y-0 md:gap-4 lg:gap-6">
+          <div class="col-span-12 md:col-span-6 lg:col-span-8 flex flex-col bg-white">
+            <div class="xs:m-1.5 overflow-hidden rounded-sm">
               <img
                 src="./src/assets/images/flowers-sm.jpg"
                 alt="Flowers"
-                class="w-full object-cover"
+                class="w-full object-contain xs:object-cover"
               />
             </div>
 
-            <div class="p-3.5 text-center bg-white">
+            <div class="sm:p-3.5 text-center bg-white">
               <span
                 class="text-arancio uppercase font-bold text-[10px] tracking-widest"
                 >Lorem Ipsum</span
               >
 
               <h3
-                class="max-w-[600px] m-auto font-abhaya text-4xl mt-2.5 leading-tight italic"
+                class="h3 max-w-[600px] m-auto font-abhaya mt-2.5 leading-tight italic"
               >
                 Lorem ipsum dolor sit amet, consectetur adipisci elit
               </h3>
@@ -377,15 +387,18 @@
             </div>
           </div>
 
-          <div class="col-span-4 flex flex-col gap-y-6">
-            <div class="grid grid-cols-2 gap-4 flex-1 bg-white">
-              <img
-                src="./src/assets/images/butterfly.jpg"
-                alt="Butterfly"
-                class="m-1 object-cover"
-              />
 
-              <div class="p-3.5 flex flex-col justify-between">
+          <div class="col-span-12 md:col-span-6 lg:col-span-4 flex sm:flex-row md:flex-col gap-x-2.5 gap-y-6">
+            <div class="grid sm:grid-cols-2 md:gap-4 flex-1 bg-white">
+              <figure class="m-1 h-60 sm:h-auto block overflow-hidden rounded-sm">
+                <img
+                  src="./src/assets/images/butterfly.jpg"
+                  alt="Butterfly"
+                  class="w-full h-full object-cover"
+                />
+              </figure>
+
+              <div class="p-1.5 xs:p-3.5 flex flex-col justify-between">
                 <div>
                   <span class="text-arancio font-bold text-[13px]"
                     >Lorem Ipsum</span
@@ -398,7 +411,7 @@
                   </h4>
 
                   <h5
-                    class="max-w-[150px] mt-6 font-noto line-clamp-2 text-[13px] leading-tight"
+                    class="max-w-[150px] mt-3 xs:mt-6 font-noto line-clamp-2 text-[13px] leading-tight"
                   >
                     Lorem ipsum dolor sit amet
                   </h5>
@@ -410,7 +423,7 @@
                   </p>
 
                   <button
-                    class="mt-6 border border-grigio-scuro py-1 text-[10px] font-bold w-full"
+                    class="mt-3 xs:mt-6 border border-grigio-scuro py-1 text-[10px] font-bold w-full"
                   >
                     Scopri di più
                   </button>
@@ -418,14 +431,16 @@
               </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-4 flex-1 bg-white">
-              <img
-                src="./src/assets/images/rabbits.jpg"
-                alt="Rabbits"
-                class="m-1 object-cover"
-              />
+            <div class="grid sm:grid-cols-2 md:gap-4 flex-1 bg-white">
+              <figure class="h-60 sm:h-auto m-1 block overflow-hidden rounded-sm">
+                <img
+                  src="./src/assets/images/rabbits.jpg"
+                  alt="Rabbits"
+                  class="w-full h-full object-cover"
+                />
+              </figure>
 
-              <div class="p-3.5 flex flex-col justify-between">
+              <div class="p-1.5 xs:p-3.5 flex flex-col justify-between">
                 <div>
                   <span class="text-arancio font-bold text-[13px]"
                     >Lorem Ipsum</span
@@ -436,7 +451,7 @@
                     Lorem ipsum dolor sit amet
                   </h4>
                   <h5
-                    class="max-w-[150px] mt-6 font-noto line-clamp-2 text-[13px] leading-tight"
+                    class="max-w-[150px] mt-3 xs:mt-6 font-noto line-clamp-2 text-[13px] leading-tight"
                   >
                     Lorem ipsum dolor sit amet
                   </h5>
@@ -448,7 +463,7 @@
                   </p>
 
                   <button
-                    class="mt-6 border border-grigio-scuro py-1 text-[10px] font-bold w-full"
+                    class="mt-3 xs:mt-6 border border-grigio-scuro py-1 text-[10px] font-bold w-full"
                   >
                     Scopri di più
                   </button>
@@ -458,7 +473,6 @@
           </div>
         </div>
       </section>
-       -->
     </main>
     <!-- 
     <footer class="wrapper text-grigio-scuro">
