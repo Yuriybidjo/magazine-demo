@@ -83,6 +83,16 @@
   }
 }
 
+@layer utilities {
+  .scrollbar-none {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
+
 @layer local {
   .wrapper {
     --size-content: 78.75rem;
@@ -103,6 +113,10 @@
   .wrapper > *,
   .section-fb > * {
     grid-column: content-start / content-end;
+  }
+
+  .wrapper > .item-fb {
+    grid-column: full-start / full-end;
   }
 
   .section-fb {

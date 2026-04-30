@@ -75,7 +75,7 @@
             <li class="bg-arancio/30 sm:bg-transparent rounded relative">
               <button
                 type="button"
-                class="w-full sm:w-auto py-2.5 sm:py-0 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center justify-between gap-0.5 rounded"
+                class="w-full sm:w-auto py-2.5 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center justify-between gap-0.5 rounded"
               >
                 <span class="pointer-events-none select-none">Corsi</span>
                 <i class="ri-arrow-down-s-line pointer-events-none"></i>
@@ -224,6 +224,7 @@
       <section
         class="section-fb sm:h-145 py-10 sm:py-0 bg-hero bg-cover bg-center relative isolate"
       >
+      <!-- gradient overlay -->
         <div
           class="item-fb absolute inset-0 z-0"
           style="
@@ -235,7 +236,7 @@
             mix-blend-mode: multiply;
           "
         ></div>
-
+      <!-- text content -->
         <div
           class="text-center lg:text-left sm:row-span-full justify-self-end lg:justify-self-auto self-end w-full max-w-96 sm:max-w-lg xl:max-w-[730px] mb-14 z-10"
         >
@@ -250,92 +251,109 @@
             eiusmod
           </p>
         </div>
-
+        <!--carousel wrapper  -->
         <div
-          class="h-auto sm:h-[304px] lg:h-[400px] sm:row-span-full justify-self-end py-4 sm:py-10 sm:pr-1 sm:mt-5 lg:py-14 flex gap-2 sm:flex-col sm:self-start lg:justify-between z-1 overflow-x-auto sm:overflow-x-hidden sm:overflow-y-auto snap-x sm:snap-y snap-mandatory"
+          class="carousel-wrapper max-w-80 lg:max-w-fit relative group sm:row-span-full justify-self-end sm:self-start sm:mt-5 z-1"
         >
-          <div
-            class="bg-white w-fit lg:w-96 shrink-0 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow hover:scale-[1.02] cursor-pointer snap-start"
+          <!-- Left Button -->
+          <button
+            id="left-btn"
+            class="sm:hidden w-6 h-6 grid place-items-center absolute left-1 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-800 rounded-full shadow-lg transition opacity-0 group-hover:opacity-100 cursor-pointer"
           >
-            <div class="max-w-24 lg:max-w-32 p-0.5 bg-grigio-chiaro shrink-0">
-              <img src="./src/assets/images/header-slider-item1.jpg" alt="" />
-            </div>
-
-            <div class="flex flex-col justify-between py-4">
-              <span class="text-[10px] capitalize font-bold text-arancio mb-1"
-                >Lorem Ipsum</span
-              >
-              <h3
-                class="max-w-[180px] font-noto font-medium line-clamp-2 text-xs sm:text-sm lg:text-lg leading-tight text-grigio-scuro"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-            </div>
-          </div>
-
+            <i class="ri-arrow-left-wide-line"></i>
+          </button>
+          <!-- carousel -->
           <div
-            class="bg-white w-fit lg:w-96 shrink-0 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow hover:scale-[1.02] cursor-pointer snap-start"
+            id="carousel"
+            class="scroll-smooth scroll-px-2 cursor-pointer h-auto sm:h-[19rem] lg:h-[25rem] flex sm:gap-2 sm:flex-col lg:justify-between overflow-x-auto sm:overflow-y-auto snap-x sm:snap-y snap-mandatory scrollbar-none"
           >
+            <!-- item 1 -->
             <div
-              class="max-w-24 lg:max-w-32 p-0.5 bg-grigio-chiaro flex-shrink-0"
+              class="bg-white mr-2 sm:mr-0 w-full lg:w-96 shrink-0 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow snap-start"
             >
-              <img src="./src/assets/images/header-slider-item2.jpg" alt="" />
-            </div>
+              <div class="max-w-24 lg:max-w-32 p-0.5 bg-grigio-chiaro shrink-0">
+                <img src="./src/assets/images/header-slider-item1.jpg" alt="" />
+              </div>
 
-            <div class="flex flex-col justify-between py-4">
-              <span class="text-[10px] capitalize font-bold text-arancio mb-1"
-                >Lorem Ipsum</span
-              >
-              <h3
-                class="max-w-[180px] font-noto font-medium line-clamp-2 text-xs sm:text-sm lg:text-lg leading-tight text-grigio-scuro"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
+              <div class="flex flex-col justify-between py-4 pr-4">
+                <span class="text-[10px] capitalize font-bold text-arancio mb-1"
+                  >Lorem Ipsum</span
+                >
+                <h3
+                  class="max-w-[180px] font-noto font-medium line-clamp-2 text-xs sm:text-sm lg:text-lg leading-tight text-grigio-scuro"
+                >
+                  Lorem ipsum dolor sit amet
+                </h3>
+              </div>
             </div>
-          </div>
-
-          <div
-            class="bg-white w-fit lg:w-96 shrink-0 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow hover:scale-[1.02] cursor-pointer snap-start"
-          >
+            <!-- item 2 -->
             <div
-              class="max-w-24 lg:max-w-32 p-0.5 bg-grigio-chiaro flex-shrink-0"
+              class="bg-white mr-2 sm:mr-0 w-full lg:w-96 shrink-0 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow snap-start"
             >
-              <img src="./src/assets/images/header-slider-item3.jpg" alt="" />
+              <div
+                class="max-w-24 lg:max-w-32 p-0.5 bg-grigio-chiaro flex-shrink-0"
+              >
+                <img src="./src/assets/images/header-slider-item2.jpg" alt="" />
+              </div>
+
+              <div class="flex flex-col justify-between py-4 pr-4">
+                <span class="text-[10px] capitalize font-bold text-arancio mb-1"
+                  >Lorem Ipsum</span
+                >
+                <h3
+                  class="max-w-[180px] font-noto font-medium line-clamp-2 text-xs sm:text-sm lg:text-lg leading-tight text-grigio-scuro"
+                >
+                  Lorem ipsum dolor sit amet
+                </h3>
+              </div>
             </div>
+            <!-- item 3 -->
+            <div
+              class="bg-white mr-2 sm:mr-0 w-full lg:w-96 shrink-0 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow snap-start"
+            >
+              <div class="max-w-24 lg:max-w-32 p-0.5 bg-grigio-chiaro shrink-0">
+                <img src="./src/assets/images/header-slider-item3.jpg" alt="" />
+              </div>
 
-            <div class="flex flex-col justify-between py-4">
-              <span class="text-[10px] capitalize font-bold text-arancio mb-1"
-                >Lorem Ipsum</span
-              >
+              <div class="flex flex-col justify-between py-4 pr-4">
+                <span class="text-[10px] capitalize font-bold text-arancio mb-1"
+                  >Lorem Ipsum</span
+                >
 
-              <h3
-                class="max-w-[180px] font-noto font-medium line-clamp-2 text-xs sm:text-sm lg:text-lg leading-tight text-grigio-scuro"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
+                <h3
+                  class="max-w-[180px] font-noto font-medium line-clamp-2 text-xs sm:text-sm lg:text-lg leading-tight text-grigio-scuro"
+                >
+                  Lorem ipsum dolor sit amet
+                </h3>
+              </div>
+            </div>
+            <!-- temporary item for demonstration -->
+            <div
+              class="bg-white w-full lg:w-96 shrink-0 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow snap-start"
+            >
+              <div class="max-w-24 lg:max-w-32 p-0.5 bg-grigio-chiaro shrink-0">
+                <img src="./src/assets/images/header-slider-item1.jpg" alt="" />
+              </div>
+
+              <div class="flex flex-col justify-between py-4 pr-4">
+                <span class="text-[10px] capitalize font-bold text-arancio mb-1"
+                  >Lorem Ipsum</span
+                >
+                <h3
+                  class="max-w-[180px] font-noto font-medium line-clamp-2 text-xs sm:text-sm lg:text-lg leading-tight text-grigio-scuro"
+                >
+                  Lorem ipsum dolor sit amet
+                </h3>
+              </div>
             </div>
           </div>
-
-          <!-- temporary cards for demonstration -->
-
-          <div
-            class="bg-white w-fit lg:w-96 shrink-0 flex gap-x-4 rounded-sm shadow-sm hover:shadow-md transition-shadow hover:scale-[1.02] cursor-pointer snap-start"
+          <!-- Right Button -->
+          <button
+            id="right-btn"
+            class="sm:hidden w-6 h-6 grid place-items-center absolute right-1 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-800 rounded-full shadow-lg transition opacity-0 group-hover:opacity-100 cursor-pointer"
           >
-            <div class="max-w-24 lg:max-w-32 p-0.5 bg-grigio-chiaro shrink-0">
-              <img src="./src/assets/images/header-slider-item1.jpg" alt="" />
-            </div>
-
-            <div class="flex flex-col justify-between py-4">
-              <span class="text-[10px] capitalize font-bold text-arancio mb-1"
-                >Lorem Ipsum</span
-              >
-              <h3
-                class="max-w-[180px] font-noto font-medium line-clamp-2 text-xs sm:text-sm lg:text-lg leading-tight text-grigio-scuro"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-            </div>
-          </div>
+            <i class="ri-arrow-right-wide-fill"></i>
+          </button>
         </div>
       </section>
 
@@ -354,7 +372,9 @@
         </div>
 
         <div class="grid grid-cols-12 gap-y-2 sm:gap-y-0 md:gap-4 lg:gap-6">
-          <div class="col-span-12 md:col-span-6 lg:col-span-8 flex flex-col bg-white">
+          <div
+            class="col-span-12 md:col-span-6 lg:col-span-8 flex flex-col bg-white"
+          >
             <div class="xs:m-1.5 overflow-hidden rounded-sm">
               <img
                 src="./src/assets/images/flowers-sm.jpg"
@@ -387,10 +407,13 @@
             </div>
           </div>
 
-
-          <div class="col-span-12 md:col-span-6 lg:col-span-4 flex sm:flex-row md:flex-col gap-x-2.5 gap-y-6">
+          <div
+            class="col-span-12 md:col-span-6 lg:col-span-4 flex sm:flex-row md:flex-col gap-x-2.5 gap-y-6"
+          >
             <div class="grid sm:grid-cols-2 md:gap-4 flex-1 bg-white">
-              <figure class="m-1 h-60 sm:h-auto block overflow-hidden rounded-sm">
+              <figure
+                class="m-1 h-60 sm:h-auto block overflow-hidden rounded-sm"
+              >
                 <img
                   src="./src/assets/images/butterfly.jpg"
                   alt="Butterfly"
@@ -432,7 +455,9 @@
             </div>
 
             <div class="grid sm:grid-cols-2 md:gap-4 flex-1 bg-white">
-              <figure class="h-60 sm:h-auto m-1 block overflow-hidden rounded-sm">
+              <figure
+                class="h-60 sm:h-auto m-1 block overflow-hidden rounded-sm"
+              >
                 <img
                   src="./src/assets/images/rabbits.jpg"
                   alt="Rabbits"
@@ -474,7 +499,8 @@
         </div>
       </section>
     </main>
-    <!-- 
+    <!-- Footer hidden temporary
+
     <footer class="wrapper text-grigio-scuro">
       <div class="section-fb bg-fondini pt-5 pb-8">
         <div class="grid grid-cols-12 gap-5">
@@ -570,7 +596,7 @@
         <div class="pt-10 pb-20 grid grid-cols-12 gap-5 border-t">
           <div class="col-span-4">
             <h2
-              class="max-w-sm mb-5 text-2xl font-medium text-grigio-scuro leading-snug leading-tight"
+              class="max-w-sm mb-5 text-2xl font-medium text-grigio-scuro leading-tight"
             >
               La nostra scintillante Newsletter!
             </h2>
@@ -688,7 +714,8 @@
         </p>
       </div>
     </footer>
-     -->
+
+    -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -6,6 +6,9 @@ const hamburger = document.getElementById('hamburger');
 const searchBtn = document.getElementById('searchBtn');
 const searchInput = document.getElementById('search');
 const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+const carousel = document.getElementById('carousel');
+const leftBtn = document.getElementById('left-btn');
+const rightBtn = document.getElementById('right-btn');
 
 // Mobile menu toggle
 openBtn.addEventListener('click', () => {
@@ -70,3 +73,26 @@ window.addEventListener('click', (event) => {
     });
   };
 });
+
+// Carousel functionality
+const handleScroll = (direction) => {
+  if (window.matchMedia('(min-width: 576px)').matches) {
+    return;
+  }
+
+  const firstCard = carousel.querySelector('div');
+  if (!firstCard) return;
+
+  const cardWidth = firstCard.getBoundingClientRect().width;
+  const gap = 8; 
+  const scrollAmount = cardWidth + gap;
+
+  if (direction === 'left') {
+    carousel.scrollLeft -= scrollAmount;
+  } else {
+    carousel.scrollLeft += scrollAmount;
+  }
+};
+
+leftBtn.addEventListener('click', () => handleScroll('left'));
+rightBtn.addEventListener('click', () => handleScroll('right'));
