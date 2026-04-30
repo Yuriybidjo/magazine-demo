@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    <!-- header -->
     <header class="sticky top-0 z-50 bg-white w-full shadow-sm">
       <nav
         class="max-w-screen-xl m-auto px-2.5 xs:px-5 xl:px-0 pt-4 pb-2 flex flex-wrap items-center gap-4 xl:gap-x-10 text-gray-700 bg-white"
@@ -219,12 +220,12 @@
         </div>
       </nav>
     </header>
-
+    <!-- main content -->
     <main class="wrapper">
       <section
         class="section-fb sm:h-145 py-10 sm:py-0 bg-hero bg-cover bg-center relative isolate"
       >
-      <!-- gradient overlay -->
+        <!-- gradient overlay -->
         <div
           class="item-fb absolute inset-0 z-0"
           style="
@@ -236,7 +237,7 @@
             mix-blend-mode: multiply;
           "
         ></div>
-      <!-- text content -->
+        <!-- text content -->
         <div
           class="text-center lg:text-left sm:row-span-full justify-self-end lg:justify-self-auto self-end w-full max-w-96 sm:max-w-lg xl:max-w-[730px] mb-14 z-10"
         >
@@ -499,45 +500,58 @@
         </div>
       </section>
     </main>
-    <!-- Footer hidden temporary
-
+    <!-- Footer -->
     <footer class="wrapper text-grigio-scuro">
-      <div class="section-fb bg-fondini pt-5 pb-8">
-        <div class="grid grid-cols-12 gap-5">
-          <div class="relative top-7 col-span-10">
-            <img src="./src/assets/images/svg/logo.svg" alt="Logo" />
-            <div class="absolute"></div>
+      <div class="section-fb bg-fondini pt-2.5 sm:pt-5 pb-4 sm:pb-8">
+        <div class="relative grid grid-cols-12 gap-5">
+          <!-- divider -->
+          <hr
+            class="hidden sm:block absolute bottom-0 right-0 sm:max-w-[80%] md:max-w-[90%] xl:max-w-full w-full h-0.5 col-start-3 col-end-13 border-grigio-scuro/30"
+          />
+          <!-- logo -->
+          <div class="relative sm:top-7 col-span-6 sm:col-span-4 md:col-span-3 justify-self-start">
+            <a
+              href="/"
+              class="inline-block focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400"
+              aria-label="Go to Home"
+            >
+              <img
+                class="w-37.5 md:w-auto"
+                src="./src/assets/images/svg/logo.svg"
+                alt="Home Magazine Logo"
+              />
+            </a>
           </div>
-
+          <!-- social media icons -->
           <div
-            class="col-span-2 justify-self-end inline-flex gap-x-5 items-center"
+            class="col-span-6 sm:col-span-8 md:col-span-9 justify-self-end inline-flex gap-x-2 xs:gap-x-4 sm:gap-x-5 items-center"
           >
             <img
-              class="w-fit h-8"
+              class="w-fit h-6 sm:h-8"
               src="./src/assets/images/svg/pinterest.svg"
               alt=""
             />
             <img
-              class="w-fit h-6"
+              class="w-fit h-6 sm:h-8"
               src="./src/assets/images/svg/facebook.svg"
               alt=""
             />
             <img
-              class="w-fit h-6"
+              class="w-fit h-6 sm:h-8"
               src="./src/assets/images/svg/instagram.svg"
               alt=""
             />
             <img
-              class="w-fit h-6"
+              class="w-fit h-6 sm:h-8"
               src="./src/assets/images/svg/youtube.svg"
               alt=""
             />
           </div>
         </div>
-
-        <div class="pt-10 pb-8 grid grid-cols-12 gap-5">
-          <div class="col-span-2">
-            <h4 class="font-sans font-bold capitalize text-[13px]">Magazine</h4>
+        <!-- footer links -->
+        <div class="pt-5 sm:pt-10 pb-4 sm:pb-8 grid grid-cols-12 gap-5 justify-items-center xl:justify-items-start">
+          <div class="col-span-6 sm:col-span-4 md:col-span-2">
+            <h4 class="font-sans font-bold capitalize text-lg">Magazine</h4>
             <ul class="text-[12px] space-y-1">
               <li><a href="#">News</a></li>
               <li><a href="#">Tutorial</a></li>
@@ -545,7 +559,7 @@
             </ul>
           </div>
 
-          <div class="col-span-2">
+          <div class="col-span-6 sm:col-span-4 md:col-span-2">
             <h4 class="font-sans font-bold capitalize text-lg">Mondi</h4>
             <ul class="text-[12px] space-y-1">
               <li><a href="#">Cucito & Filato</a></li>
@@ -556,15 +570,15 @@
             </ul>
           </div>
 
-          <div class="col-span-2">
-            <h4 class="font-sans font-bold capitalize text-[13px]">Corsi</h4>
+          <div class="col-span-6 sm:col-span-4 md:col-span-2 order-6 sm:order-none">
+            <h4 class="font-sans font-bold capitalize text-lg">Corsi</h4>
             <ul class="text-[12px] space-y-1">
               <li><a href="#">Corsi nella tua città</a></li>
             </ul>
           </div>
 
-          <div class="col-span-2">
-            <h4 class="font-sans font-bold capitalize text-[13px]">Fiera</h4>
+          <div class="col-span-6 sm:col-span-4 md:col-span-2">
+            <h4 class="font-sans font-bold capitalize text-lg">Fiera</h4>
             <ul class="text-[12px] space-y-1">
               <li><a href="#">Vicenza</a></li>
               <li><a href="#">Roma</a></li>
@@ -573,8 +587,8 @@
             </ul>
           </div>
 
-          <div class="col-span-2">
-            <h4 class="font-sans font-bold capitalize text-[13px]">Utili</h4>
+          <div class="col-span-6 sm:col-span-4 md:col-span-2">
+            <h4 class="font-sans font-bold capitalize text-lg">Utili</h4>
             <ul class="text-[12px] space-y-1">
               <li><a href="#">Newsletter</a></li>
               <li><a href="#">Privacy policy</a></li>
@@ -584,17 +598,17 @@
             </ul>
           </div>
 
-          <div class="col-span-2">
-            <h4 class="font-sans font-bold capitalize text-[13px]">Negozi</h4>
+          <div class="col-span-6 sm:col-span-4 md:col-span-2">
+            <h4 class="font-sans font-bold capitalize text-lg">Negozi</h4>
             <ul class="text-[12px] space-y-1">
               <li><a href="#">Negozi nella tua città</a></li>
               <li><a href="#">Negozi online</a></li>
             </ul>
           </div>
         </div>
-
-        <div class="pt-10 pb-20 grid grid-cols-12 gap-5 border-t">
-          <div class="col-span-4">
+        <!-- newsletter -->
+        <div class="pt-5 sm:pt-10 pb-5 sm:pb-20 grid grid-cols-12 gap-5 border-t">
+          <div class="col-span-12 md:col-span-4">
             <h2
               class="max-w-sm mb-5 text-2xl font-medium text-grigio-scuro leading-tight"
             >
@@ -607,9 +621,9 @@
             </p>
           </div>
 
-          <div class="col-span-8">
-            <form action="/" class="flex justify-between">
-              <div class="max-w-sm flex-1 flex flex-col gap-y-2.5">
+          <div class="col-span-12 md:col-span-8">
+            <form action="/" class="flex flex-col lg:flex-row gap-4 xl:gap-20">
+              <div class="flex-1 flex flex-col gap-y-2.5">
                 <div>
                   <label
                     for="name"
@@ -640,15 +654,15 @@
                 </div>
               </div>
 
-              <div class="max-w-xs pt-4 flex flex-col gap-y-2.5">
-                <p class="text-[9px]">
+              <div class="pt-4 flex flex-wrap md:flex-col gap-5 lg:gap-1">
+                <p class="max-w-sm lg:max-w-xs text-[9px]">
                   Letta l'informativa comunicatami, dichiaro la seguente volontà
                   circa il trattamento dati per autonome finalità di marketing
                   diretto da parte di terzi partner di IEG (finalità 4
                   dell'informativa)
                 </p>
 
-                <div class="flex gap-4 text-[10px] capitalize font-bold">
+                <div class="flex-1 flex gap-4 text-[10px] capitalize font-bold">
                   <label class="flex items-center gap-2"
                     ><input type="radio" name="privacy" /> Acconsento</label
                   >
@@ -658,7 +672,7 @@
                 </div>
 
                 <button
-                  class="w-max border border-grigio-scuro px-14 py-2 capitalize text-[13px] font-medium hover:bg-grigio-scuro hover:text-white transition"
+                  class="w-full md:w-max border border-grigio-scuro px-14 py-2 capitalize text-[13px] font-medium hover:bg-grigio-scuro hover:text-white transition"
                 >
                   Iscriviti
                 </button>
@@ -667,46 +681,46 @@
           </div>
         </div>
       </div>
-
-      <div class="py-10 grid grid-cols-12 items-center gap-x-5">
-        <div class="col-span-8">
+      <!-- footer logos -->
+      <div class="py-5 sm:py-10 grid grid-cols-2 sm:grid-cols-6 lg:grid-cols-12 items-center gap-2.5 lg:gap-x-5">
+        <div class="col-span-1 sm:col-span-2 lg:col-span-4 xl:col-span-8 justify-self-center sm:justify-self-start">
           <p class="mb-1.5 text-[0.8125rem] leading-tight font-medium">
             Organizzato da:
           </p>
           <img
-            class="object-contain"
+            class="object-contain w-44 sm:w-[214px]"
             src="./src/assets/images/footer-group1.png"
             alt=""
           />
         </div>
 
-        <div class="col-span-2">
+        <div class="bordercol-span-1 sm:col-span-2 lg:col-span-4 xl:col-span-2 justify-self-center sm:justify-self-end">
           <img
-            class="object-contain"
+            class="object-contain w-24 sm:w-[160px]"
             src="./src/assets/images/footer-group2.png"
             alt=""
           />
         </div>
 
-        <div class="">
+        <div class="lg:col-span-2 xl:col-span-1 justify-self-center sm:justify-self-end">
           <img
-            class="object-contain"
+            class="object- size-14 sm:size-[84px]"
             src="./src/assets/images/footer-group3.png"
             alt=""
           />
         </div>
 
-        <div class="">
+        <div class="lg:col-span-2 xl:col-span-1 justify-self-center sm:justify-self-end">
           <img
-            class="object-contain"
+            class="object-contain size-14 sm:size-[84px]"
             src="./src/assets/images/footer-group4.png"
             alt=""
           />
         </div>
       </div>
-
-      <div class="section-fb bg-grigio-chiaro">
-        <p class="py-5 text-[13px] tracking-tight">
+      <!-- footer copyright -->
+      <div class=" section-fb bg-grigio-chiaro">
+        <p class="py-2.5 sm:py-5 text-[13px] tracking-tight">
           &#169; ITALIAN EXHIBITION GROUP SpA&#169; All rights reserved - Via
           Emilia 155, 47921 Rimini - CF&#47;PI 00139440408 - Registro Imprese:
           Rimini P.I e n. Reg. Imprese 00139440408 - Capitale Sociale &#8364;
@@ -714,8 +728,7 @@
         </p>
       </div>
     </footer>
-
-    -->
+    <!-- script -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
