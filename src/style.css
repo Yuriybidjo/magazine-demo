@@ -89,6 +89,10 @@
   .section {
     @apply my-5 sm:my-10 lg:my-20 px-4 xl:px-0 py-5 sm:py-10 lg:py-20;
   }
+
+  .link-hover{
+    @apply hover:text-hover-menu-mobile transition-colors duration-300;
+  }
 }
 
 @layer utilities {
