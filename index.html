@@ -19,11 +19,7 @@
       >
         <!-- logo -->
         <div class="order-1 md:order-0 grow xl:grow-0">
-          <a
-            href="/"
-            class="inline-block focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400"
-            aria-label="Go to Home"
-          >
+          <a href="/" class="inline-block state-base" aria-label="Go to Home">
             <img
               class="w-37.5 md:w-auto"
               src="./src/assets/images/svg/logo.svg"
@@ -42,13 +38,13 @@
         >
           <!-- List container dropdown menu -->
           <ul
-            class="font-medium text-[0.8125rem] leading-[1.4] h-[80%] sm:py-2 sm:h-auto flex flex-col gap-y-4 sm:gap-y-0 sm:flex-row sm:items-center sm:gap-x-4 md:gap-x-7 xl:gap-x-10 overflow-y-auto"
+            class="font-medium text-[0.8125rem] leading-[1.4] h-[80%] sm:px-2 sm:py-2 sm:h-auto flex flex-col gap-y-4 sm:gap-y-0 sm:flex-row sm:items-center sm:gap-x-4 md:gap-x-7 xl:gap-x-10 overflow-y-auto"
           >
             <!--dropdown link item 1 -->
             <li class="bg-arancio/30 sm:bg-transparent rounded relative">
               <button
                 type="button"
-                class="w-full sm:w-auto py-2.5 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center justify-between gap-0.5 rounded"
+                class="state-base w-full sm:w-auto py-2.5 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center justify-between gap-0.5 rounded"
               >
                 <span class="pointer-events-none select-none">Magazine</span>
                 <i class="ri-arrow-down-s-line pointer-events-none"></i>
@@ -76,7 +72,7 @@
             <li class="bg-arancio/30 sm:bg-transparent rounded relative">
               <button
                 type="button"
-                class="w-full sm:w-auto py-2.5 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center justify-between gap-0.5 rounded"
+                class="state-base w-full sm:w-auto py-2.5 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center justify-between gap-0.5 rounded"
               >
                 <span class="pointer-events-none select-none">Corsi</span>
                 <i class="ri-arrow-down-s-line pointer-events-none"></i>
@@ -104,7 +100,7 @@
             <li class="bg-arancio/30 sm:bg-transparent rounded relative">
               <button
                 type="button"
-                class="w-full sm:w-auto py-2.5 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center justify-between gap-0.5 rounded"
+                class="state-base w-full sm:w-auto py-2.5 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center justify-between gap-0.5 rounded"
               >
                 <span class="pointer-events-none select-none">Fiere</span>
                 <i class="ri-arrow-down-s-line pointer-events-none"></i>
@@ -132,7 +128,7 @@
             <li class="bg-arancio/30 sm:bg-transparent rounded relative">
               <button
                 type="button"
-                class="w-full sm:w-auto py-2.5 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center justify-between gap-0.5 rounded"
+                class="state-base w-full sm:w-auto py-2.5 sm:py-3 px-1.5 sm:px-2 dropdown-toggle hover:bg-grigio-chiaro flex items-center justify-between gap-0.5 rounded"
               >
                 <span class="pointer-events-none select-none">Negozi</span>
                 <i class="ri-arrow-down-s-line pointer-events-none"></i>
@@ -165,13 +161,13 @@
             <input
               type="text"
               id="search"
-              class="w-0 lg:w-md invisible opacity-0 pointer-events-none z-10 absolute right-0 h-10 pl-4 pr-10 rounded-full outline-none bg-grigio-chiaro font-sans text-sm transition-all duration-300 ease-in-out"
+              class="state-base w-0 lg:w-md invisible opacity-0 pointer-events-none z-10 absolute right-0 h-10 pl-4 pr-10 rounded-full outline-none bg-grigio-chiaro font-sans text-sm transition-all duration-300 ease-in-out"
               placeholder="Search..."
             />
             <button
               type="button"
               id="searchBtn"
-              class="ri-search-line text-2xl relative z-20 cursor-pointer mr-1"
+              class="state-base ri-search-line text-2xl relative z-20 cursor-pointer mr-1"
             ></button>
           </form>
         </div>
@@ -500,41 +496,40 @@
           </div>
         </div>
       </section>
-         <!-- section Mondi company -->
-       <section class="border cta ">
+      <!-- section Mondi company -->
+      <section class="border cta">
         <div class="border section bg-fondini">section Mondi company</div>
-       </section>
-       <!-- section tutorial -->
-       <section class="border cta section-fb bg-fondini">
+      </section>
+      <!-- section tutorial -->
+      <section class="border cta section-fb bg-fondini">
         <div class="border section">section tutorial</div>
-       </section>
+      </section>
       <!-- section sponsor -->
-       <section class="border sponsor">
+      <section class="border sponsor">
         <div class="border section bg-fondini">section sponsor</div>
-       </section>
+      </section>
       <!-- section call to action -->
-       <section class="border cta section-fb bg-fondini">
+      <section class="border cta section-fb bg-fondini">
         <div class="border section">section call to action</div>
-       </section>
+      </section>
       <!-- section newsletter -->
       <section class="hewsletter">
-        <div
-          class="bg-fondini section grid grid-cols-6 md:grid-cols-12 gap-5"
-        >
-          <div class="col-span-6 lg:col-span-7 max-w-[560px] justify-self-center">
-            <h2
-              class="h2 mb-5 md:mb-10"
-            >
-              La nostra scintillante Newsletter!
-            </h2>
+        <div class="bg-fondini section grid grid-cols-6 md:grid-cols-12 gap-5">
+          <!-- newsletter content -->
+          <div
+            class="col-span-6 lg:col-span-7 max-w-[560px] justify-self-center"
+          >
+            <h2 class="h2 mb-5 md:mb-10">La nostra scintillante Newsletter!</h2>
             <h3 class="h3">
               Novità di fiera in anteprima, creative da seguire, tutorial
               freschissimi, promozioni e codici sconto per le tue spese folli
               online. Wonder Woman sarà fiera di te!
             </h3>
           </div>
-
-          <div class="col-span-6 lg:col-span-4 max-w-[560px] justify-self-center">
+          <!-- form container -->
+          <div
+            class="col-span-6 lg:col-span-4 max-w-[560px] justify-self-center"
+          >
             <form action="/" class="flex flex-col gap-4 xl:gap-10">
               <div class="flex-1 flex flex-col lg:gap-y-2.5">
                 <div>
@@ -566,7 +561,7 @@
                   />
                 </div>
               </div>
-
+              <!-- radio buttons wrapper -->
               <div class="pt-4 flex flex-wrap md:flex-col gap-4 lg:gap-1">
                 <p class="max-w-sm lg:max-w-xs text-[9px]">
                   Letta l'informativa comunicatami, dichiaro la seguente volontà
@@ -574,16 +569,34 @@
                   diretto da parte di terzi partner di IEG (finalità 4
                   dell'informativa)
                 </p>
-
+                <!--  custom radio buttons -->
                 <div class="flex-1 flex gap-4 text-[10px] capitalize font-bold">
-                  <label class="flex items-center gap-2"
-                    ><input type="radio" name="privacy" /> Acconsento</label
-                  >
-                  <label class="flex items-center gap-2"
-                    ><input type="radio" name="privacy" /> Non Acconsento</label
-                  >
-                </div>
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="privacy" class="sr-only peer" />
+                    <div
+                      class="w-4 h-4 border border-gray-400 rounded-full flex items-center justify-center peer-focus:ring-2 peer-focus:ring-blue-300 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-all"
+                    >
+                      <div
+                        class="w-1.5 h-1.5 bg-white rounded-full opacity-0 peer-checked:opacity-100 transition-opacity"
+                      ></div>
+                    </div>
+                    <span>Acconsento</span>
+                  </label>
 
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="privacy" class="sr-only peer" />
+
+                    <div
+                      class="w-4 h-4 border border-gray-400 rounded-full flex items-center justify-center peer-focus:ring-2 peer-focus:ring-blue-300 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-all"
+                    >
+                      <div
+                        class="w-1.5 h-1.5 bg-white rounded-full opacity-0 peer-checked:opacity-100 transition-opacity"
+                      ></div>
+                    </div>
+                    <span>Non Acconsento</span>
+                  </label>
+                </div>
+                <!-- form submit button -->
                 <button
                   class="w-full md:w-max border border-grigio-scuro mt-5 lg:mt-8 px-14 py-2 capitalize text-[13px] font-medium hover:bg-grigio-scuro hover:text-white transition"
                 >
@@ -598,6 +611,7 @@
     <!-- Footer -->
     <footer class="wrapper text-grigio-scuro">
       <div class="section-fb bg-fondini pt-2.5 sm:pt-5 pb-4 sm:pb-8">
+        <!-- footer main -->
         <div class="relative grid grid-cols-12 gap-5">
           <!-- divider -->
           <hr
@@ -607,11 +621,7 @@
           <div
             class="relative sm:top-7 col-span-6 sm:col-span-4 md:col-span-3 justify-self-start"
           >
-            <a
-              href="/"
-              class="inline-block focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400"
-              aria-label="Go to Home"
-            >
+            <a href="/" class="inline-block state-base" aria-label="Go to Home">
               <img
                 class="w-37.5 md:w-auto"
                 src="./src/assets/images/svg/logo.svg"
@@ -711,6 +721,7 @@
         <div
           class="pt-5 sm:pt-10 pb-5 sm:pb-20 grid grid-cols-12 gap-5 border-t"
         >
+          <!-- newsletter content -->
           <div class="col-span-12 md:col-span-4">
             <h2
               class="max-w-sm mb-5 text-2xl font-medium text-grigio-scuro leading-tight"
@@ -723,7 +734,7 @@
               online. Wonder Woman sarà fiera di te!
             </p>
           </div>
-
+          <!-- form container -->
           <div class="col-span-12 md:col-span-8">
             <form action="/" class="flex flex-col lg:flex-row gap-4 xl:gap-20">
               <div class="flex-1 flex flex-col gap-y-2.5">
@@ -756,7 +767,7 @@
                   />
                 </div>
               </div>
-
+              <!-- radio buttons wrapper -->
               <div class="pt-4 flex flex-wrap md:flex-col gap-5 lg:gap-1">
                 <p class="max-w-sm lg:max-w-xs text-[9px]">
                   Letta l'informativa comunicatami, dichiaro la seguente volontà
@@ -764,16 +775,34 @@
                   diretto da parte di terzi partner di IEG (finalità 4
                   dell'informativa)
                 </p>
-
+                <!--  custom radio buttons -->
                 <div class="flex-1 flex gap-4 text-[10px] capitalize font-bold">
-                  <label class="flex items-center gap-2"
-                    ><input type="radio" name="privacy" /> Acconsento</label
-                  >
-                  <label class="flex items-center gap-2"
-                    ><input type="radio" name="privacy" /> Non Acconsento</label
-                  >
-                </div>
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="privacy" class="sr-only peer" />
+                    <div
+                      class="w-4 h-4 border border-gray-400 rounded-full flex items-center justify-center peer-focus:ring-2 peer-focus:ring-blue-300 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-all"
+                    >
+                      <div
+                        class="w-1.5 h-1.5 bg-white rounded-full opacity-0 peer-checked:opacity-100 transition-opacity"
+                      ></div>
+                    </div>
+                    <span>Acconsento</span>
+                  </label>
 
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="privacy" class="sr-only peer" />
+
+                    <div
+                      class="w-4 h-4 border border-gray-400 rounded-full flex items-center justify-center peer-focus:ring-2 peer-focus:ring-blue-300 peer-checked:bg-blue-600 peer-checked:border-blue-600 transition-all"
+                    >
+                      <div
+                        class="w-1.5 h-1.5 bg-white rounded-full opacity-0 peer-checked:opacity-100 transition-opacity"
+                      ></div>
+                    </div>
+                    <span>Non Acconsento</span>
+                  </label>
+                </div>
+                <!-- form submit button -->
                 <button
                   class="w-full md:w-max border border-grigio-scuro px-14 py-2 capitalize text-[13px] font-medium hover:bg-grigio-scuro hover:text-white transition"
                 >

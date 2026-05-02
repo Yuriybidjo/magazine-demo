@@ -99,6 +99,9 @@
   .scrollbar-none::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
   }
+  .state-base {
+    @apply focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400;
+  }
 }
 
 @layer local {
