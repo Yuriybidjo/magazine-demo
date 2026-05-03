@@ -93,6 +93,11 @@
   .link-hover{
     @apply hover:text-hover-menu-mobile transition-colors duration-300;
   }
+
+  .btn {
+    @apply border border-grigio-scuro rounded-sm text-xs font-bold hover:bg-grigio-scuro hover:text-white transition-colors duration-300;
+  }
+  
 }
 
 @layer utilities {
