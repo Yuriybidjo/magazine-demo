@@ -358,6 +358,7 @@
       <section
         class="section-fb py-6 md:py-11 lg:py-16 bg-fondini text-grigio-scuro"
       >
+        <!-- news content -->
         <div
           class="flex justify-between items-baseline border-b border-grigio-scuro mb-10 pb-2"
         >
@@ -371,7 +372,7 @@
 
         <div class="grid grid-cols-12 gap-y-2 sm:gap-y-0 md:gap-4 lg:gap-6">
           <div
-            class="col-span-12 md:col-span-6 lg:col-span-8 flex flex-col bg-white"
+            class="self-start lg:self-stretch col-span-12 md:col-span-6 lg:col-span-8 flex flex-col bg-white"
           >
             <div class="xs:m-1.5 overflow-hidden rounded-sm">
               <img
@@ -497,52 +498,73 @@
         <div
           class="section xl:px-24 bg-fondini grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-5"
         >
-        <h2 class="mb-4 pb-2 border-b border-grigio-scuro col-span-full text-2xl text-center sm:text-left">Mondi</h2>
+          <!-- Mondo Title -->
+          <h2
+            class="mb-4 pb-2 border-b border-grigio-scuro col-span-full text-2xl text-center sm:text-left"
+          >
+            Mondi
+          </h2>
           <!-- Mondo 1 -->
-          <div class="relative pt-12 md:pt-[61px]">
+          <div class="grid grid-rows-[auto_auto_1fr]">
             <!-- Icon -->
             <div
-              class="absolute top-0 left-1/2 -translate-x-1/2 size-24 md:size-[122px] bg-grigio-scuro rounded-full flex items-center justify-center z-10 shadow-lg"
+              class="size-24 sm:size-[120px] row-start-1 row-end-3 col-span-full justify-self-center bg-grigio-scuro rounded-full flex items-center justify-center shadow-lg z-10"
             >
-              <img src="/src/assets/images/extension/extension1.svg" alt="Mondo Icon" />
+              <img
+                class="object-contain"
+                src="/src/assets/images/extension/extension1.svg"
+                alt="Mondo Icon"
+              />
             </div>
             <!-- Card body -->
             <div
-              class="bg-bianco p-4 md:p-6 pt-20 md:pt-24 text-center shadow-sm h-full"
+              class="pt-20 pb-6 row-start-2 row-end-4 col-span-full bg-bianco text-center shadow-sm flex flex-col justify-start items-center"
             >
-              <p class="text-[13px] font-medium text-grigio leading-[1.4]">
-                Cucito & Filato
+              <p class="px-2 text-[13px] font-medium text-grigio leading-[1.4]">
+                Cucito & Filato Тут більше контента для демонстрації
               </p>
             </div>
           </div>
           <!-- Mondo 2 -->
-          <div class="relative pt-12 md:pt-[61px]">
+          <div class="grid grid-rows-[auto_auto_1fr]">
             <!-- Icon -->
             <div
-              class="absolute top-0 left-1/2 -translate-x-1/2 size-24 md:size-[122px] bg-grigio-scuro rounded-full flex items-center justify-center z-10 shadow-lg"
+              class="size-24 sm:size-[120px] row-start-1 row-end-3 col-span-full justify-self-center bg-grigio-scuro rounded-full flex items-center justify-center shadow-lg z-10"
             >
-              <img src="/src/assets/images/extension/extension2.svg" alt="Mondo Icon" />
+              <img
+                class="object-contain"
+                src="/src/assets/images/extension/extension2.svg"
+                alt="Mondo Icon"
+              />
             </div>
             <!-- Card body -->
             <div
-              class="bg-bianco p-6 md:p-8 pt-20 md:pt-24 text-center shadow-sm h-full"
+              class="pt-20 pb-6 row-start-2 row-end-4 col-span-full bg-bianco text-center shadow-sm flex flex-col justify-start items-center"
             >
               <p class="text-[13px] font-medium text-grigio leading-[1.4]">
                 Carta, Scrap & Colore
               </p>
+              <p class="text-[13px] font-medium text-grigio leading-[1.4]">
+                ще один ряд для демонстрації, щоб показати як виглядає з більшим
+                контентом
+              </p>
             </div>
           </div>
           <!-- Mondo 3 -->
-          <div class="relative pt-12 md:pt-[61px]">
+          <div class="grid grid-rows-[auto_auto_1fr]">
             <!-- Icon -->
             <div
-              class="absolute top-0 left-1/2 -translate-x-1/2 size-24 md:size-[122px] bg-grigio-scuro rounded-full flex items-center justify-center z-10 shadow-lg"
+              class="size-24 sm:size-[120px] row-start-1 row-end-3 col-span-full justify-self-center bg-grigio-scuro rounded-full flex items-center justify-center shadow-lg z-10"
             >
-              <img src="/src/assets/images/extension/extension3.svg" alt="Mondo Icon" />
+              <img
+                class="object-contain"
+                src="/src/assets/images/extension/extension3.svg"
+                alt="Mondo Icon"
+              />
             </div>
             <!-- Card body -->
             <div
-              class="bg-bianco p-6 md:p-8 pt-20 md:pt-24 text-center shadow-sm h-full"
+              class="pt-20 pb-6 row-start-2 row-end-4 col-span-full bg-bianco text-center shadow-sm flex flex-col justify-start items-center"
             >
               <p class="text-[13px] font-medium text-grigio leading-[1.4]">
                 Decorazione
@@ -550,16 +572,20 @@
             </div>
           </div>
           <!-- Mondo 4 -->
-          <div class="relative pt-12 md:pt-[61px]">
+          <div class="grid grid-rows-[auto_auto_1fr]">
             <!-- Icon -->
             <div
-              class="absolute top-0 left-1/2 -translate-x-1/2 size-24 md:size-[122px] bg-grigio-scuro rounded-full flex items-center justify-center z-10 shadow-lg"
+              class="size-24 sm:size-[120px] row-start-1 row-end-3 col-span-full justify-self-center bg-grigio-scuro rounded-full flex items-center justify-center shadow-lg z-10"
             >
-              <img src="/src/assets/images/extension/extension4.svg" alt="Mondo Icon" />
+              <img
+                src="/src/assets/images/extension/extension4.svg"
+                alt="Mondo Icon"
+                class="object-contain"
+              />
             </div>
             <!-- Card body -->
             <div
-              class="bg-bianco p-6 md:p-8 pt-20 md:pt-24 text-center shadow-sm h-full"
+              class="pt-20 pb-6 row-start-2 row-end-4 col-span-full bg-bianco text-center shadow-sm flex flex-col justify-start items-center"
             >
               <p class="text-[13px] font-medium text-grigio leading-[1.4]">
                 Ricamo & Tradizione
@@ -567,16 +593,20 @@
             </div>
           </div>
           <!-- Mondo 5 -->
-          <div class="relative pt-12 md:pt-[61px]">
+          <div class="grid grid-rows-[auto_auto_1fr]">
             <!-- Icon -->
             <div
-              class="absolute top-0 left-1/2 -translate-x-1/2 size-24 md:size-[122px] bg-grigio-scuro rounded-full flex items-center justify-center z-10 shadow-lg"
+              class="size-24 sm:size-[120px] row-start-1 row-end-3 col-span-full justify-self-center bg-grigio-scuro rounded-full flex items-center justify-center shadow-lg z-10"
             >
-              <img src="/src/assets/images/extension/extension5.svg" alt="Mondo Icon" />
+              <img
+                src="/src/assets/images/extension/extension5.svg"
+                alt="Mondo Icon"
+                class="object-contain"
+              />
             </div>
             <!-- Card body -->
             <div
-              class="bg-bianco p-6 md:p-8 pt-20 md:pt-24 text-center shadow-sm h-full"
+              class="pt-20 pb-6 row-start-2 row-end-4 col-span-full bg-bianco text-center shadow-sm flex flex-col justify-start items-center"
             >
               <p class="text-[13px] font-medium text-grigio leading-[1.4]">
                 Bijoux & Accessori
@@ -586,8 +616,128 @@
         </div>
       </section>
       <!-- section tutorial -->
-      <section class="border cta section-fb bg-fondini">
-        <div class="border section">section tutorial</div>
+      <section class="tutorial section-fb section my-0 bg-fondini">
+        <!-- tutorial title -->
+        <div
+          class="flex justify-between items-baseline border-b border-grigio-scuro mb-10"
+        >
+          <h2 class="h2">Tutorial</h2>
+          <a
+            href="#"
+            class="font-sans font-bold text-xs hover:text-arancio transition"
+            >Vedi tutte</a
+          >
+        </div>
+        <!-- grid container -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-5"
+        >
+          <!-- Tutorial Card 1 -->
+          <div
+            class="grid gap-5 grid-rows-[auto_auto_1fr_auto] bg-bianco pb-6 rounded-sm shadow-sm group cursor-pointer"
+          >
+            <!-- Image Container -->
+            <div class="m-1 overflow-hidden">
+              <img
+                src="/src/assets/images/tutorial/tutorial1.jpg"
+                class="w-full aspect-video object-cover rounded-xs group-hover:scale-105 transition-transform"
+              />
+            </div>
+            <!--Card Info-->
+            <div
+              class="px-6 flex justify-between text-[13px] capitalize font-medium"
+            >
+              <span
+                >Durata:
+                <span class="text-arancio font-bold">20 min</span></span
+              >
+              <span
+                >di
+                <span class="text-arancio font-bold"
+                  >Angelica Foschi</span
+                ></span
+              >
+            </div>
+            <!-- Card Title -->
+            <h3 class="h3 px-6 lg:pb-4">
+              Lorem ipsum dolor sit, consectetur adipisci <span class="text-amber-700 italic">Тут більше тексту для демонстрації</span>
+            </h3>
+            <!-- Action Button -->
+            <div class="px-6">
+              <button class="btn w-full py-3">Guarda</button>
+            </div>
+          </div>
+          <!-- Tutorial Card 2 -->
+          <div
+            class="grid gap-5 grid-rows-[auto_auto_1fr_auto] bg-bianco rounded-sm pb-6 shadow-sm group cursor-pointer"
+          >
+            <!-- Image Container -->
+            <div class="m-1 overflow-hidden">
+              <img
+                src="/src/assets/images/tutorial/tutorial2.jpg"
+                class="w-full aspect-video object-cover rounded-xs group-hover:scale-105 transition-transform"
+              />
+            </div>
+            <!-- Card Info -->
+            <div
+              class="px-6 flex justify-between text-[13px] capitalize font-medium"
+            >
+              <span
+                >Durata:
+                <span class="text-arancio font-bold">20 min</span></span
+              >
+              <span
+                >di
+                <span class="text-arancio font-bold"
+                  >Angelica Foschi</span
+                ></span
+              >
+            </div>
+            <!-- Card Title -->
+            <h3 class="h3 px-6 lg:pb-4">
+              Lorem ipsum dolor sit, consectetur adipisci
+            </h3>
+            <!-- Action Button -->
+            <div class="px-6">
+              <button class="btn w-full py-3">Guarda</button>
+            </div>
+          </div>
+          <!-- Tutorial Card 3 -->
+          <div
+            class="grid gap-5 grid-rows-[auto_auto_1fr_auto] bg-bianco rounded-sm pb-6 shadow-sm group cursor-pointer"
+          >
+            <!-- Image Container -->
+            <div class="m-1 overflow-hidden">
+              <img
+                src="/src/assets/images/tutorial/tutorial3.jpg"
+                class="w-full aspect-video object-cover rounded-xs group-hover:scale-105 transition-transform"
+              />
+            </div>
+            <!-- Card Info -->
+            <div
+              class="px-6 flex justify-between text-[13px] capitalize font-medium"
+            >
+              <span
+                >Durata:
+                <span class="text-arancio font-bold">20 min</span></span
+              >
+              <span
+                >di
+                <span class="text-arancio font-bold"
+                  >Angelica Foschi</span
+                ></span
+              >
+            </div>
+            <!-- Card Title -->
+            <h3 class="h3 px-6 lg:pb-4">
+              Lorem ipsum dolor sit, consectetur adipisci
+            </h3>
+            <!-- Action Button -->
+            <div class="px-6">
+              <button class="btn w-full py-3">Guarda</button>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- section sponsor -->
       <section class="border sponsor">

@@ -71,10 +71,10 @@
   }
 
   .h3 {
-    @apply text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl;
+    @apply text-lg lg:text-2xl xl:text-[30px];
   }
 
-  .h4 {
+  /* .h4 {
     @apply text-2xl xs:text-3xl md:text-3xl lg:text-4xl xl:text-4xl;
   }
 
@@ -84,7 +84,7 @@
 
   .h6 {
     @apply text-lg xs:text-xl md:text-xl font-medium;
-  }
+  } */
 
   .section {
     @apply my-5 sm:my-10 lg:my-20 px-4 xl:px-0 py-5 sm:py-10 lg:py-20;
@@ -95,7 +95,7 @@
   }
 
   .btn {
-    @apply border border-grigio-scuro rounded-sm text-xs font-bold hover:bg-grigio-scuro hover:text-white transition-colors duration-300;
+    @apply border-[1.5px] border-grigio-scuro rounded-sm text-xs font-bold hover:bg-grigio-scuro hover:text-white transition-colors duration-300;
   }
   
 }
