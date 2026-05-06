@@ -1,4 +1,9 @@
 import "./style.css";
+import { initSponsorSlider } from './slider.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  initSponsorSlider();
+});
 
 const openBtn = document.getElementById('open-menu');
 const mobileNav = document.getElementById('mobile-nav');
