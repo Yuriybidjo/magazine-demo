@@ -372,13 +372,13 @@
 
         <div class="grid grid-cols-12 gap-y-2 sm:gap-y-0 md:gap-4 lg:gap-6">
           <div
-            class="self-start lg:self-stretch col-span-12 md:col-span-6 lg:col-span-8 flex flex-col bg-white"
+            class="col-span-12 md:col-span-6 lg:col-span-8 flex flex-col bg-white"
           >
-            <div class="xs:m-1.5 overflow-hidden rounded-sm">
+            <div class="xs:m-1.5 md:aspect-video lg:aspect-auto overflow-hidden rounded-sm">
               <img
                 src="./src/assets/images/flowers-sm.jpg"
                 alt="Flowers"
-                class="w-full object-contain xs:object-cover"
+                class="w-full h-full object-cover"
               />
             </div>
 
@@ -845,8 +845,64 @@
         </div>
       </section>
       <!-- section call to action -->
-      <section class="border cta section-fb bg-fondini">
-        <div class="border section">section call to action</div>
+      <section class="cta section-fb bg-fondini">
+        <!-- grid-container -->
+        <div
+          class="section p-0 grid gap-y-6 lg:gap-y-0 sm:grid-cols-6 lg:grid-cols-12"
+        >
+        <!-- grid item 1 -->
+          <div
+            class="text-center lg:text-left p-9 lg:p-0 md:px-10 xl:px-20 bg-bianco col-span-6 flex flex-col justify-center gap-8 rounded-sm lg:rounded-l"
+          >
+            <h2 class="h2 mb-2">Vieni a trovarci in fiera!</h2>
+            <h3 class="h4 max-w-145 mx-auto">
+              Abilmente è la fiera che proprio non puoi perderti interamente
+              dedicata alla manualità creativa!
+            </h3>
+            <p class="text-[13px] max-w-145 mx-auto">
+              Che tu ci conosca già oppure no, qui abbiamo un bel po' di cose
+              che potrebbero davvero mandarti fuori di testa
+            </p>
+          </div>
+          <!-- grid item 2 -->
+          <div
+            class="col-span-6 flex gap-y-5 lg:gap-y-0 gap-x-5 lg:gap-x-0 flex-col md:flex-row lg:flex-col lg:justify-center text-bianco"
+          >
+            <div
+              class="p-4 sm:p-6 xl:p-12 basis-full flex gap-x-7 xl:gap-x-14 items-center bg-[oklch(0.64_0.11_210.59)] rounded-sm lg:rounded-none lg:rounded-r"
+            >
+              <figure class="size-[130px] bg-white">
+                <img src="https://picsum.photos/200" alt="Roma" class="w-full h-full object-cover" />
+              </figure>
+              <div class="flex-1">
+                <h3 class="lg:text-2xl xl:text-[40px] leading-none">Roma</h3>
+                <h4 class="h4 mb-3">Dal 23 al 26 settembre 2021</h4>
+                <a
+                  href="#"
+                  class="py-3 px-4 border rounded-sm border-bianco inline-block bg-transparent text-[13px] font-medium text-center leading-tight hover:border-transparent hover:underline underline-offset-3 transition-all duration-300"
+                  >Scopri di più</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="p-4 sm:p-6 xl:p-12 basis-full flex gap-x-7 xl:gap-x-14 items-center bg-arancio rounded-sm lg:rounded-none lg:rounded-r"
+            >
+              <figure class="size-[130px] bg-white">
+                <img src="https://picsum.photos/200" alt="Vicenza" class="w-full h-full object-cover" />
+              </figure>
+              <div class="flex-1">
+                <h3 class="md:text-2xl xl:text-[40px] leading-none">Vicenza</h3>
+                <h4 class="h4 mb-4">Dal 14 al 17 ottobre 2021</h4>
+                <a
+                  href="#"
+                  class="py-3 px-3 border rounded-sm border-bianco inline-block bg-transparent text-[13px] font-medium text-center leading-tight hover:border-transparent hover:underline underline-offset-3 transition-all duration-300"
+                  >Scopri di più</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- section newsletter -->
       <section class="newsletter">
