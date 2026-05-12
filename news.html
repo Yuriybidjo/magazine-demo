@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazine Demo News</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <load src="src/partials/header.html" pageName="header" />
+    <!-- main content -->
+    <main class="wrapper bg-fondini">
+      <!-- News breadcrumb navigation -->
+      <load src="/src/partials/breadcrumbs-news.html" pageName="News" />
+
+      <!-- news content -->
+      <div class="bg-bianco text-center py-14">
+        <h1 class="h2 text-grigio-scuro">News</h1>
+        <p class="p">
+          Consigli, tutorial e curiosità sull'universo del Cucito e Filato fai
+          da te
+        </p>
+      </div>
+      <!-- section news -->
+      <section class="py-4 md:py-6 lg:py-8 text-grigio-scuro">
+        <!-- news content -->
+        <div
+          class="flex justify-between items-baseline border-b border-grigio-scuro mb-10 pb-2"
+        >
+          <h2 class="h4">In evidenza</h2>
+        </div>
+        <!-- News main grid-container -->
+        <load src="/src/partials/news-main.html" />
+      </section>
+    </main>
+    <!-- Footer -->
+    <load src="/src/partials/footer.html" />
+    <!-- script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
